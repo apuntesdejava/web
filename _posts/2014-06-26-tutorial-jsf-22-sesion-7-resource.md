@@ -16,9 +16,9 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Resource Library Contracts](/assets/blogger/3d7123fced.jpg)](/assets/blogger/3d7123fced.jpg)
+[![Resource Library Contracts]({{ '/assets/blogger/3d7123fced.jpg' | relative_url }})]({{ '/assets/blogger/3d7123fced.jpg' | relative_url }})
 
-¿Qué pasaría si nuestra aplicación web debe lucir con diferentes estructuras de página en diferentes secciones de la aplicación? Sabemos que podemos usar los [facelets](/2013/12/tutorial-jsf-22-sesion-4-facelets-parte.html), que - dependiendo de qué plantilla le indiquemos - nos mostrará una estructura diferente. Pero, si son varias páginas que pertenecen a una carpeta, sería un suicidio poner en todas las páginas qué plantilla debe utilizar ¿cierto?. Aquí es donde aparecen los "Resource Library Contracts" (no encontré una traducción acorde al español) que consiste en usar una plantilla especial, si las páginas en cuestión están dentro de una URL específico
+¿Qué pasaría si nuestra aplicación web debe lucir con diferentes estructuras de página en diferentes secciones de la aplicación? Sabemos que podemos usar los [facelets]({{ '/2013/12/tutorial-jsf-22-sesion-4-facelets-parte.html' | relative_url }}), que - dependiendo de qué plantilla le indiquemos - nos mostrará una estructura diferente. Pero, si son varias páginas que pertenecen a una carpeta, sería un suicidio poner en todas las páginas qué plantilla debe utilizar ¿cierto?. Aquí es donde aparecen los "Resource Library Contracts" (no encontré una traducción acorde al español) que consiste en usar una plantilla especial, si las páginas en cuestión están dentro de una URL específico
 
 ### Cómo funciona
 
@@ -40,11 +40,11 @@ Para nuestro ejemplo, usaremos:
 
 Por practicidad, los últimos proyectos lo estoy desarrollando con Maven. Por tanto, crearemos un proyecto Maven > Web Application
 
-[![](/assets/blogger/01.png)](/assets/blogger/01.png)
+[![]({{ '/assets/blogger/01.png' | relative_url }})]({{ '/assets/blogger/01.png' | relative_url }})
 
 Y lo llamaré `jsf-07-rlc`. Luego, le agregaremos el framework JSF. Para ello, entraremos a las propiedades del proyecto, y en la categoría "Frameworks", agregamos a "JavaServer Faces" y nos aseguramos que sea la versión JSF 2.2.
 
-[![](/assets/blogger/02.png)](/assets/blogger/02.png)
+[![]({{ '/assets/blogger/02.png' | relative_url }})]({{ '/assets/blogger/02.png' | relative_url }})
 
 Clic en "OK"
 
@@ -52,7 +52,7 @@ Clic en "OK"
 
 Crearemos cuatro páginas, dos de ellas estarán en la raíz del módulo web, y las otras dos estarán en una subcarpeta llamada "app1"
 
-[![](/assets/blogger/03.png)](/assets/blogger/03.png)
+[![]({{ '/assets/blogger/03.png' | relative_url }})]({{ '/assets/blogger/03.png' | relative_url }})
 
 Comenzaremos a editar el archivo `/index.xhtml`
 
@@ -167,27 +167,27 @@ Igual aquí se están asumiendo la misma plantilla "/template", pero ahora verem
 
 Primero, vamos a crear la plantilla que se usará para la carpeta app1. Luego, se creará el que será de omisión. Con ayuda del IDE, seleccionamos File > New > JavaServer Faces > JSF Resource Library Contract
 
-[![](/assets/blogger/04.png)](/assets/blogger/04.png)
+[![]({{ '/assets/blogger/04.png' | relative_url }})]({{ '/assets/blogger/04.png' | relative_url }})
 
 Clic en "Next"
 
-Nuestro contrato se llamará "app". Notemos que lo creará dentro de la carpeta "contracts". Es una carpeta predefenida como la de "resources" que vimos en el [post anterior](/2014/06/tutorial-jsf-22-sesion-6-recursos.html).
+Nuestro contrato se llamará "app". Notemos que lo creará dentro de la carpeta "contracts". Es una carpeta predefenida como la de "resources" que vimos en el [post anterior]({{ '/2014/06/tutorial-jsf-22-sesion-6-recursos.html' | relative_url }}).
 
 Activamos el check de "Create Initial Template" para que nos cree una plantilla inicial.
 
-[![](/assets/blogger/05.png)](/assets/blogger/05.png)
+[![]({{ '/assets/blogger/05.png' | relative_url }})]({{ '/assets/blogger/05.png' | relative_url }})
 
 Clic en "Finish".
 
 Veamos la estructura que ha creado.
 
-[![](/assets/blogger/06.png)](/assets/blogger/06.png)
+[![]({{ '/assets/blogger/06.png' | relative_url }})]({{ '/assets/blogger/06.png' | relative_url }})
 
 Vemos la carpeta "contracts", la subcarpeta "app" y dentro está la plantilla y su css. Notemos, además, que el template.xhtml está en la *raiz* relativa a "app"
 
 También veamos el template.xhtml creado. Cuenta con dos `<ui:insert />` llamados "top" y "content".
 
-[![](/assets/blogger/07.png)](/assets/blogger/07.png)
+[![]({{ '/assets/blogger/07.png' | relative_url }})]({{ '/assets/blogger/07.png' | relative_url }})
 
 Cambiaremos el nombre del "top" a "nav", ya que contendrá nuestro menú principal
 
@@ -258,11 +258,11 @@ Crearemos otro contract, pero que se llamará "default" y no le pediremos que cr
 
 Ahora, crearemos el archivo faces-config.xml: File > New > JavaServer Faces > JSF Faces Configuration
 
-[![](/assets/blogger/08.png)](/assets/blogger/08.png)
+[![]({{ '/assets/blogger/08.png' | relative_url }})]({{ '/assets/blogger/08.png' | relative_url }})
 
 Clic en Next, y con los valores predeterminados, clic en "Finish"
 
-[![](/assets/blogger/09.png)](/assets/blogger/09.png)
+[![]({{ '/assets/blogger/09.png' | relative_url }})]({{ '/assets/blogger/09.png' | relative_url }})
 
 El contenido será el siguiente:
 
@@ -313,19 +313,19 @@ Veamos cómo luce cuando se ejecuta. Esta es la página principal, con sus dos e
 
 Esta es la /index.xhtml
 
-[![](/assets/blogger/10.png)](/assets/blogger/10.png)
+[![]({{ '/assets/blogger/10.png' | relative_url }})]({{ '/assets/blogger/10.png' | relative_url }})
 
  Cuando hacemos clic en "Pagina 2" de arriba, nos lanza esto
 
-[![](/assets/blogger/11.png)](/assets/blogger/11.png)
+[![]({{ '/assets/blogger/11.png' | relative_url }})]({{ '/assets/blogger/11.png' | relative_url }})
 
 Regresamos a la página "Inicio" y ahora le damos clic en "App"
 
-[![](/assets/blogger/12.png)](/assets/blogger/12.png)
+[![]({{ '/assets/blogger/12.png' | relative_url }})]({{ '/assets/blogger/12.png' | relative_url }})
 
 Y cuando hacemos clic en el menú de arriba en "Pagina 1", nos muestra esto
 
-[![](/assets/blogger/13.png)](/assets/blogger/13.png)
+[![]({{ '/assets/blogger/13.png' | relative_url }})]({{ '/assets/blogger/13.png' | relative_url }})
 
 ### Código fuente
 

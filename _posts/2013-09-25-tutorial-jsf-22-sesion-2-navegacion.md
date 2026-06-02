@@ -16,7 +16,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![](/assets/blogger/jsf-logo.png)](/assets/blogger/jsf-logo.png)
+[![]({{ '/assets/blogger/jsf-logo.png' | relative_url }})]({{ '/assets/blogger/jsf-logo.png' | relative_url }})
 
 La navegación en JSF hace fácil la navegación entre páginas y permite manejar procesamiento adicional que sea necesario al momento de ir entre una página y otra.
 
@@ -150,29 +150,29 @@ Sí, el único fue el titulo y el nombre físico del archivo.
 
 Ahora bien ¿cómo se le dice que cuando se llame a `page1` vaya a `navegacion_definida_usuario_pagina1.xhtml` ? Aquí es donde entrar el archivo de configuración. Si lo ejecutamos tal cual, nos aparecerá un mensaje de advertencia.
 
-[![](/assets/blogger/nav01.png)](/assets/blogger/nav01.png)
+[![]({{ '/assets/blogger/nav01.png' | relative_url }})]({{ '/assets/blogger/nav01.png' | relative_url }})
 
 Para ello, crearemos un nuevo archivo (Ctrl+N) y en la categoría "JavaServer Faces" seleccionamos "JSF Faces Configuration".
 
-[![](/assets/blogger/nav02.png)](/assets/blogger/nav02.png)
+[![]({{ '/assets/blogger/nav02.png' | relative_url }})]({{ '/assets/blogger/nav02.png' | relative_url }})
 
 Clic en "Next" y clic en "Finish" aceptando todas las opciones por omisión.
 
 Se nos abrirá en el editor el archivo en formato xml. Hagamos clic en el barra superior sobre el botón "PageFlow".
 
-[![](/assets/blogger/nav03.png)](/assets/blogger/nav03.png)
+[![]({{ '/assets/blogger/nav03.png' | relative_url }})]({{ '/assets/blogger/nav03.png' | relative_url }})
 
 Ahora sí!, algo visual en NetBeans!
 
-[![](/assets/blogger/nav04.png)](/assets/blogger/nav04.png)
+[![]({{ '/assets/blogger/nav04.png' | relative_url }})]({{ '/assets/blogger/nav04.png' | relative_url }})
 
 Desde aquí podemos definir la navegación desde index.html hasta las demás páginas. Veamos en el nodo que representa a `index.html` hay un icono cuadrado azul en el lado derecho. Hagamos clic allí y arrastremos la flecha hacía las páginas `navegacion_definida_usuario_pagina1.xhtml` y `navegacion_definida_usuario_pagina2.xhtml`
 
-[![](/assets/blogger/nav05.png)](/assets/blogger/nav05.png)
+[![]({{ '/assets/blogger/nav05.png' | relative_url }})]({{ '/assets/blogger/nav05.png' | relative_url }})
 
 Y veremos que cada arco tiene un nombre: `case1` y case2. Hagamos clic derecho en cada uno de ellos y seleccionemos "Rename..." para cambiarle el nombre a `page1` y `page2` respectivamente.
 
-[![](/assets/blogger/nav06.png)](/assets/blogger/nav06.png)
+[![]({{ '/assets/blogger/nav06.png' | relative_url }})]({{ '/assets/blogger/nav06.png' | relative_url }})
 
 Adicionalmente, podemos seleccionar el botón superior "Source"
 

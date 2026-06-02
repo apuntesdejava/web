@@ -6,4 +6,4 @@ permalink: /archive/2006/05/
 
 # Archivo 2006/05
 
-- 2006-05-01 - [AJAX](/2006/05/ajax.html)
+- 2006-05-01 - [AJAX]({{ '/2006/05/ajax.html' | relative_url }})

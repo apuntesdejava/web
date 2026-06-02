@@ -13,7 +13,7 @@ tags:
   - "jersey"
 ---
 
-[![Consumiendo servicios JSON de Liferay usando Jersey](/assets/blogger/liferay-jersey.png)](/assets/blogger/liferay-jersey.png)
+[![Consumiendo servicios JSON de Liferay usando Jersey]({{ '/assets/blogger/liferay-jersey.png' | relative_url }})]({{ '/assets/blogger/liferay-jersey.png' | relative_url }})
 
 Liferay viene con servicios RESTful llamados "[Servicios Web JSON](https://www.liferay.com/es/documentation/liferay-portal/6.2/development/-/ai/json-web-services-liferay-portal-6-2-dev-guide-05-en)", porque utiliza el formato JSON. En este post voy a compartir una manera de consumir desde Jersey para acceder a sus datos.
 

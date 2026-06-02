@@ -8,11 +8,11 @@ permalink: /2015/05/dbf2java-library-mudado.html
 canonical_url: https://www.apuntesdejava.com/2015/05/dbf2java-library-mudado.html
 ---
 
-[![dbf 2 java](/assets/blogger/foxpro.png)](/assets/blogger/foxpro.png)
+[![dbf 2 java]({{ '/assets/blogger/foxpro.png' | relative_url }})]({{ '/assets/blogger/foxpro.png' | relative_url }})
 
 Hace muchos años (si son más de 5, ya son muchos) hice una biblioteca para manejar archivos DBF en Java. Esto fue porque necesita importar archivos DBF creados por FoxPro (¿alguien recuerda ese programa?). Como yo venía de una cantera que todo se trabajaba con DBF, entonces mi idea era hacer una biblioteca en Java que hiciera los mismos comandos de Fox en Java... bueno, casi todos. Así que solo hice la versión de leer registros, mas no terminé la parte de escribir registros.
 
-Lo publiqué en un post anterior ([http://www.apuntesdejava.com/2007/09/dbf-2-java-library.html](/2007/09/dbf-2-java-library.html)) y el código fuente estaba publicado en esta dirección:
+Lo publiqué en un post anterior ([http://www.apuntesdejava.com/2007/09/dbf-2-java-library.html]({{ '/2007/09/dbf-2-java-library.html' | relative_url }})) y el código fuente estaba publicado en esta dirección:
 
 [https://code.google.com/p/dbf2java-library](https://code.google.com/p/dbf2java-library)
 

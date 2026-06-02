@@ -12,7 +12,7 @@ tags:
   - "netbeans"
 ---
 
-![](/assets/blogger/glassfish.jpg)
+![]({{ '/assets/blogger/glassfish.jpg' | relative_url }})
 
 Ya se acerca JavaEE 7, y que mejor es ir probando sus funcionalidades. Así que comenzaré (y espero continuar) con una serie que habla sobre Java EE 7.
 

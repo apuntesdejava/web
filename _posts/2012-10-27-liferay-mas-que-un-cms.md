@@ -12,7 +12,7 @@ tags:
   - "comentarios"
 ---
 
-[![](/assets/blogger/heading.png)](/assets/blogger/heading.png)
+[![]({{ '/assets/blogger/heading.png' | relative_url }})]({{ '/assets/blogger/heading.png' | relative_url }})
 
 Estamos desarrollando una Intranet 2.0 en una reconocida empresa, utilizando para ello Liferay. Y es que usar Liferay como un Sistema de Gestión de Contenido, no sería lo más justo para tal plataforma. Se puede hacer muchas cosas con este aplicativo.
 

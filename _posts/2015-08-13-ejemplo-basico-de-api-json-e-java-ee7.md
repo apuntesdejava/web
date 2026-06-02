@@ -13,7 +13,7 @@ tags:
   - "video"
 ---
 
-[![Ejemplo básico de API JSON e Java EE7](/assets/blogger/json-api.png)](/assets/blogger/json-api.png)
+[![Ejemplo básico de API JSON e Java EE7]({{ '/assets/blogger/json-api.png' | relative_url }})]({{ '/assets/blogger/json-api.png' | relative_url }})
 
 Aquí les muestro un vídeo, con código explicado del API de JSON que viene en Java EE 7.
 

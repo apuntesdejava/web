@@ -15,7 +15,7 @@ tags:
   - "arquillian"
 ---
 
-[![](/assets/blogger/12-testing-hammering-nails.png)](/assets/blogger/12-testing-hammering-nails.png)
+[![]({{ '/assets/blogger/12-testing-hammering-nails.png' | relative_url }})]({{ '/assets/blogger/12-testing-hammering-nails.png' | relative_url }})
 
 Ya tenemos la persistencia (JPA), ya tenemos la lógica de negocio (EJB) y con sus respectivas pruebas, ahora nos falta la parte principal del microservicio: el servicio.
 

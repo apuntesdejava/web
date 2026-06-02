@@ -16,7 +16,7 @@ Sigamos explorando lo nuevo que viene en el Java EE 8. En este post veremos las 
 
 Y como una imagen vale más que mil palabras, aquí una imagen... luego vienen las palabras.
 
-[![](/assets/blogger/javaee8-features.png)](/assets/blogger/javaee8-features.png)
+[![]({{ '/assets/blogger/javaee8-features.png' | relative_url }})]({{ '/assets/blogger/javaee8-features.png' | relative_url }})
 
 Esta imagen fue presentada por *David Delabassée * ([@delabassee](https://twitter.com/delabassee)) el año pasado en el JavaOne y resalta los cambios y adiciones para Java EE 8.
 
@@ -52,7 +52,7 @@ Una de las características más esperadas para Java EE8 es HTTP/2.0 y Server Pu
 
 ## JSON-B 1.0
 
-Es una capa de unión estándar para convertir objetos Java hacia y desde mensajes JSON. Define un algoritmo de mapeo por omisión para convertir clases Java existentes a JSON, y también permite al desarrolladores personalizar el proceso de mapeo a traves de anotaciones Java. Esto ya lo vimos en un post anterior: [Un vistazo a JSON-B de Java EE8](/2017/04/un-vistazo-json-b-de-java-ee8.html)
+Es una capa de unión estándar para convertir objetos Java hacia y desde mensajes JSON. Define un algoritmo de mapeo por omisión para convertir clases Java existentes a JSON, y también permite al desarrolladores personalizar el proceso de mapeo a traves de anotaciones Java. Esto ya lo vimos en un post anterior: [Un vistazo a JSON-B de Java EE8]({{ '/2017/04/un-vistazo-json-b-de-java-ee8.html' | relative_url }})
 
 ## Security API
 

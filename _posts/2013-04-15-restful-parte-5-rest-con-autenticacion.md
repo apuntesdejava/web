@@ -17,7 +17,7 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
 Hasta el momento hemos visto un CRUD usando RESTful, con un objeto y varios objetos.
 
@@ -82,7 +82,7 @@ Ahora, crearemos una aplicación llamada "CalculadoraSeguraRestWeb" el cuál ten
 
 <script src="http://pastebin.com/embed_js.php?i=XrXNAcsh"></script>
 
-Lo nuevo en este código (en comparación del publicado en la [Parte 1](/2010/11/restful-la-forma-mas-ligera-de-hacer.html)) es que se están declarando dos nuevas anotaciones.
+Lo nuevo en este código (en comparación del publicado en la [Parte 1]({{ '/2010/11/restful-la-forma-mas-ligera-de-hacer.html' | relative_url }})) es que se están declarando dos nuevas anotaciones.
 
 - [@DeclareRoles](http://docs.oracle.com/javaee/6/api/javax/annotation/security/DeclareRoles.html), que - como su nombre lo dice - declara los roles para una aplicación. Esta anotación se define en una clase.
 

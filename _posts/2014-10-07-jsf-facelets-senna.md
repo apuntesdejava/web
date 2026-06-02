@@ -22,7 +22,7 @@ La idea es la siguiente: tenemos una página usando plantillas (con facelets) y 
 
 Por una parte está bien, ya que al hacer clic en el enlace, la dirección que aparece en el navegador cambia a esa página, y así podemos compartir ese enlace a los amigos. Pero por otro lado está mal, porque tendría que cargar todo el contenido cada vez que navegamos de una opción a otra. Si usamos AJAX, (en conjunción con - por ejemplo - jquery para obtener el contenido de la otra página usando el comando .get ) nos resolvería la primera parte del problema, pero no nos resuelve el cambio de dirección en el navegador.
 
-Así que para esto, hagamos un ejemplo con facelets (que es la manera de generar plantillas en JSF). Para ver un ejemplo de cómo usar los facelets, revisemos el post anterior [Tutorial JSF 2.2: Facelets](/2013/12/tutorial-jsf-22-sesion-4-facelets-parte.html).
+Así que para esto, hagamos un ejemplo con facelets (que es la manera de generar plantillas en JSF). Para ver un ejemplo de cómo usar los facelets, revisemos el post anterior [Tutorial JSF 2.2: Facelets]({{ '/2013/12/tutorial-jsf-22-sesion-4-facelets-parte.html' | relative_url }}).
 
 Aquí tenemos la plantilla, común y corriente:
 <script src="https://bitbucket.org/apuntesdejava/tutorial-jsf/src/e12b654372f364b538157ad7debc1ffa5d0521fd/jsf-senna-app/src/main/webapp/WEB-INF/template/senna.xhtml?embed=t"></script>

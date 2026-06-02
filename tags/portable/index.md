@@ -6,4 +6,4 @@ permalink: /tags/portable/
 
 # Tag: portable
 
-- 2015-08-22 - [NetBeans Portable + Java Portable \[+ GlassFish Portable + Tomcat Portable...\]](/2015/08/netbeans-portable-java-portable.html)
+- 2015-08-22 - [NetBeans Portable + Java Portable \[+ GlassFish Portable + Tomcat Portable...\]]({{ '/2015/08/netbeans-portable-java-portable.html' | relative_url }})

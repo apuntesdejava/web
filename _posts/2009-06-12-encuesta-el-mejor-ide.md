@@ -12,7 +12,7 @@ tags:
 
 Lancé una encuesta para saber la opinión de los visitantes de mi blog. Quería saber  - según ustedes - es el mejor IDE:
 
-[![](/assets/blogger/encuesta.jpg)](/assets/blogger/encuesta.jpg)
+[![]({{ '/assets/blogger/encuesta.jpg' | relative_url }})]({{ '/assets/blogger/encuesta.jpg' | relative_url }})
 
 Quizás "ganó" netBeans porque justamente mi blog habla de Netbeans, y quizás llegaste a este blog buscando algo Netbeans y por ende... usas netbeans.
 

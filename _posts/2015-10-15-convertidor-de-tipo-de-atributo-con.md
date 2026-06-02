@@ -115,7 +115,7 @@ La implementación de JPA que funciona mejor es la de Hibernate, y no la de Ecli
 
 Para este ejemplo, estoy usando una base de datos incrustable llamada HSQLDB (http://hsqldb.org/) que, a mi parecer, es la más práctica para hacer demos.
 
-Anteriormente hice un post sobre [Base de datos relacionales Java](/2009/01/base-de-datos-relacionales-en-java.html), donde menciono a HSQLDB y Apache Derby. Entre los dos, prefiero el primero.
+Anteriormente hice un post sobre [Base de datos relacionales Java]({{ '/2009/01/base-de-datos-relacionales-en-java.html' | relative_url }}), donde menciono a HSQLDB y Apache Derby. Entre los dos, prefiero el primero.
 
 ```java
 <dependency>

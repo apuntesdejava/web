@@ -14,11 +14,11 @@ tags:
   - "json"
 ---
 
-[![](/assets/blogger/jsonb-logo.png)](/assets/blogger/jsonb-logo.png)
+[![]({{ '/assets/blogger/jsonb-logo.png' | relative_url }})]({{ '/assets/blogger/jsonb-logo.png' | relative_url }})
 
 Java EE 8 viene con muchas características interesantes, y en este post veremos un poco de la nueva implementación: JSON Binding, o también conocido como JSON-B ([JSR-367](https://jcp.org/en/jsr/detail?id=367))
 
-Ya tenenemos un JSON-P para manipular y procesar JSON (lo hemos visto en un post anterior: [Ejemplo básico de API JSON e Java EE7](/2015/08/ejemplo-basico-de-api-json-e-java-ee7.html) ) pero usarlo quizás no sea tan cómodo como es [Gson](https://github.com/google/gson) o [Jackson](https://github.com/FasterXML/jackson).
+Ya tenenemos un JSON-P para manipular y procesar JSON (lo hemos visto en un post anterior: [Ejemplo básico de API JSON e Java EE7]({{ '/2015/08/ejemplo-basico-de-api-json-e-java-ee7.html' | relative_url }}) ) pero usarlo quizás no sea tan cómodo como es [Gson](https://github.com/google/gson) o [Jackson](https://github.com/FasterXML/jackson).
 
 Java EE necesita de un estándar propio, por eso se encargaron de desarrollar el JSR-367 que consiste en procesar de Java a JSON y viceversa de manera muy transparente.
 

@@ -20,7 +20,7 @@ Consideremos este pequeño código en C.
 
 Al ejecutarse esta es la salida:
 
-[![](/assets/blogger/2019-04-29_12-57-31.png)](/assets/blogger/2019-04-29_12-57-31.png)
+[![]({{ '/assets/blogger/2019-04-29_12-57-31.png' | relative_url }})]({{ '/assets/blogger/2019-04-29_12-57-31.png' | relative_url }})
 
 La misma invocación, pero ejecuciones diferentes.
 

@@ -15,7 +15,7 @@ tags:
   - "netbeans"
 ---
 
-[![](/assets/blogger/spring1.png)](/assets/blogger/spring1.png)
+[![]({{ '/assets/blogger/spring1.png' | relative_url }})]({{ '/assets/blogger/spring1.png' | relative_url }})
 
 En este post veremos de qué se trata el Spring MVC (como para descansar un poco de JSF). No es que sea JSF mejor que MVC ni viceversa. Sino es para conocer ambas propuestas. Además, en el nuevo Java EE 8 aparecerá un framework llamado MVC 1.0 que lucirá mucho al Spring MVC. (Igual que JPA a Hibernate)
 

@@ -12,7 +12,7 @@ tags:
   - "log4j"
 ---
 
-[![](/assets/blogger/exclamation-mark.jpg)](/assets/blogger/exclamation-mark.jpg)
+[![]({{ '/assets/blogger/exclamation-mark.jpg' | relative_url }})]({{ '/assets/blogger/exclamation-mark.jpg' | relative_url }})
 
 Cuando se programa, es necesario manejar las excepciones, controlarlas y aprovechar su información.
 
@@ -137,7 +137,7 @@ try{
   }
 ```
 
-Y mi última recomendación: no usar `System.err` ni `System.out` para mostrar el mensaje de error. En su lugar usar algún Logger. Puede ser el `java.util.Logger` o el Log4j (que hace tiempo publiqué un [artículo aquí](/2006/02/log4j.html), y aún es válido). Lo importante de usar un logger, es que los mensajes de errores ya están separados por niveles importancia, y si es necesario mostrar algún nivel, se puedes activar o desactivar de acuerdo al caso. Y cuando entre en producción, no mostraría ni un mensaje, o solo lo necesario. Recomiendo leer el artículo [Log4j](/2006/02/log4j.html) para más detalles de esto.
+Y mi última recomendación: no usar `System.err` ni `System.out` para mostrar el mensaje de error. En su lugar usar algún Logger. Puede ser el `java.util.Logger` o el Log4j (que hace tiempo publiqué un [artículo aquí]({{ '/2006/02/log4j.html' | relative_url }}), y aún es válido). Lo importante de usar un logger, es que los mensajes de errores ya están separados por niveles importancia, y si es necesario mostrar algún nivel, se puedes activar o desactivar de acuerdo al caso. Y cuando entre en producción, no mostraría ni un mensaje, o solo lo necesario. Recomiendo leer el artículo [Log4j]({{ '/2006/02/log4j.html' | relative_url }}) para más detalles de esto.
 
 Espero que les sea de utilidad.
 

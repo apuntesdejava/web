@@ -13,7 +13,7 @@ tags:
   - "java9"
 ---
 
-[![Un vistazo a jshell: Read Eval Print Loop (REPL)](/assets/blogger/CJUGdsRVEAALzlm.jpg)](/assets/blogger/CJUGdsRVEAALzlm.jpg)
+[![Un vistazo a jshell: Read Eval Print Loop (REPL)]({{ '/assets/blogger/CJUGdsRVEAALzlm.jpg' | relative_url }})]({{ '/assets/blogger/CJUGdsRVEAALzlm.jpg' | relative_url }})
 
 Una de las novísimas características que tendrá Java 9, es la de permitir evaluar expresiones Java pero como rutinas.
 

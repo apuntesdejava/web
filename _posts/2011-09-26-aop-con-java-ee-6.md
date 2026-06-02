@@ -16,9 +16,9 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/banner-aop.png)](/assets/blogger/banner-aop.png)
+[![]({{ '/assets/blogger/banner-aop.png' | relative_url }})]({{ '/assets/blogger/banner-aop.png' | relative_url }})
 
-En un anterior [Post](/2008/06/aop-programacion-orientada-aspectos-con.html) hablé sobre [AOP](http://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_aspectos) usando [Spring](http://www.springsource.org/). Es un post algo antiguo, y me había basado de un [artículo publicado](http://www.javaranch.com/journal/2008/04/Journal200804.jsp#a2) en [JavaRanch](http://www.javaranch.com/).
+En un anterior [Post]({{ '/2008/06/aop-programacion-orientada-aspectos-con.html' | relative_url }}) hablé sobre [AOP](http://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_aspectos) usando [Spring](http://www.springsource.org/). Es un post algo antiguo, y me había basado de un [artículo publicado](http://www.javaranch.com/journal/2008/04/Journal200804.jsp#a2) en [JavaRanch](http://www.javaranch.com/).
 
 Esa vez fue usando el famoso Framework Spring, pero esta vez mencionaré como funciona el AOP desde Java EE6. Creo que ya existía desde la versión EE 5, pero no importa, aquí lo mencionamos para el deleite de todos.
 
@@ -26,7 +26,7 @@ A diferencia del Spring, es que este AOP funciona desde un contenedor Java EE, y
 
 Así que, para que funcione nuestro ejemplo, debemos crear un módulo EJB.. pero esta vez - a diferencia de otros tutoriales - crearemos una Aplicación Enterprise (EA) con un módulo EJB y WAR. El EA se llama aop-ea, y los módulos se llaman aop-ejb y aop-war respectivamente.
 
-[![](/assets/blogger/aop-01.png)](/assets/blogger/aop-01.png)
+[![]({{ '/assets/blogger/aop-01.png' | relative_url }})]({{ '/assets/blogger/aop-01.png' | relative_url }})
 
 Luego, en nuestro módulo EJB crearemos una clase común y silvestre llamada `MonitoreoInterceptor` y tendrá el siguiente contenido:
 
@@ -141,7 +141,7 @@ public class Main {
 
 El resultado en el Servidor es el siguiente..
 
-[![](/assets/blogger/aop-02.png)](/assets/blogger/aop-02.png)
+[![]({{ '/assets/blogger/aop-02.png' | relative_url }})]({{ '/assets/blogger/aop-02.png' | relative_url }})
 
 Y listo!.. ya estoy monitoreando los métodos!!
 

@@ -13,7 +13,7 @@ tags:
   - "web"
 ---
 
-Como lo prometí en el anterior post: [Usando NetBeans IDE Early Access for PHP](/2008/05/usando-netbeans-ide-early-access-for.html) comentaré sobre cómo depurar la ejecución del PHP desde NetBeans.
+Como lo prometí en el anterior post: [Usando NetBeans IDE Early Access for PHP]({{ '/2008/05/usando-netbeans-ide-early-access-for.html' | relative_url }}) comentaré sobre cómo depurar la ejecución del PHP desde NetBeans.
 
 ## Antes de empezar...
 

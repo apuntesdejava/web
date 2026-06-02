@@ -12,7 +12,7 @@ tags:
   - "java record"
 ---
 
-[![](/assets/blogger/Thinking.jpg)](/assets/blogger/Thinking.jpg)
+[![]({{ '/assets/blogger/Thinking.jpg' | relative_url }})]({{ '/assets/blogger/Thinking.jpg' | relative_url }})
 
 JEP 395: Records :
 [https://openjdk.org/jeps/395](https://openjdk.org/jeps/395).
@@ -337,7 +337,7 @@ Y la invocación a los servicios es de lo más simple y común:
 http :8080/record-rest-sample/api/sample
 ```
 
-[![](/assets/blogger/ubuntu_W6nRt7jbV1.png)](/assets/blogger/ubuntu_W6nRt7jbV1.png)
+[![]({{ '/assets/blogger/ubuntu_W6nRt7jbV1.png' | relative_url }})]({{ '/assets/blogger/ubuntu_W6nRt7jbV1.png' | relative_url }})
 
 ```java
 #Invocando a POST:

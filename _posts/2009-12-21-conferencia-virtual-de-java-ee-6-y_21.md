@@ -17,7 +17,7 @@ tags:
   - "sun"
 ---
 
-En un [post anterior](/2009/12/conferencia-virtual-de-java-ee-6-y.html) se anunció la Conferencia Virtual de JavaEE 6 y GlassFish V3. Para los que se perdieron dicha conferencia, han publicado:
+En un [post anterior]({{ '/2009/12/conferencia-virtual-de-java-ee-6-y.html' | relative_url }}) se anunció la Conferencia Virtual de JavaEE 6 y GlassFish V3. Para los que se perdieron dicha conferencia, han publicado:
 
 - [Los vídeos de la conferencia](http://www.sun.com/events/javaee6glassfishv3/virtualconference/index.jsp).
 

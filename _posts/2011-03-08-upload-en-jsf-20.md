@@ -15,7 +15,7 @@ tags:
   - "jsf 2.0"
 ---
 
-![](/assets/blogger/upload.png)
+![]({{ '/assets/blogger/upload.png' | relative_url }})
 
 Después de varias semanas desconectado por motivo de trabajo (parece que ahora sí trabajo más que antes) retomo (y espero que sea más seguido) los artículos de este blog que, según veo las estadísticas, a varios desarrolladores ayudan.
 
@@ -25,23 +25,23 @@ Supongamos que nuestra aplicación debe  registrar  una bitácora de trabajo, y 
 
 Nuestra aplicación web...
 
-[![](/assets/blogger/upload-001.jpg)](/assets/blogger/upload-001.jpg)
+[![]({{ '/assets/blogger/upload-001.jpg' | relative_url }})]({{ '/assets/blogger/upload-001.jpg' | relative_url }})
 
 ... se llamará "BitacoraWeb"...
 
-[![](/assets/blogger/upload-002.jpg)](/assets/blogger/upload-002.jpg)
+[![]({{ '/assets/blogger/upload-002.jpg' | relative_url }})]({{ '/assets/blogger/upload-002.jpg' | relative_url }})
 
 ... y se ejecutará en GlassFish V3...
 
-[![](/assets/blogger/upload-003.jpg)](/assets/blogger/upload-003.jpg)
+[![]({{ '/assets/blogger/upload-003.jpg' | relative_url }})]({{ '/assets/blogger/upload-003.jpg' | relative_url }})
 
 ... con soporte para JSF 2.0
 
-[![](/assets/blogger/upload-004.jpg)](/assets/blogger/upload-004.jpg)
+[![]({{ '/assets/blogger/upload-004.jpg' | relative_url }})]({{ '/assets/blogger/upload-004.jpg' | relative_url }})
 
 Y listo...
 
-[![](/assets/blogger/upload-005.jpg)](/assets/blogger/upload-005.jpg)
+[![]({{ '/assets/blogger/upload-005.jpg' | relative_url }})]({{ '/assets/blogger/upload-005.jpg' | relative_url }})
 
 Comencemos ahora sí. (Para la siguiente haré un post bien explicado sobre cómo crear aplicaciones web en NetBeans para ahorrarme estos pasos)
 
@@ -106,21 +106,21 @@ public class Adjunto implements Serializable {
 
 Ahora, necesitamos el manejador de la entidad `Entrada`. Con el NetBeans, esto se nos será muy fácil: basta con seleccionar desde la opción "File > New" la opción "Persistence > Session Beans For Entity Classes"
 
-[![](/assets/blogger/upload-006.jpg)](/assets/blogger/upload-006.jpg)
+[![]({{ '/assets/blogger/upload-006.jpg' | relative_url }})]({{ '/assets/blogger/upload-006.jpg' | relative_url }})
 
 Seleccionamos las Entidades que queremos administrar...
 
-[![](/assets/blogger/upload-007.jpg)](/assets/blogger/upload-007.jpg)
+[![]({{ '/assets/blogger/upload-007.jpg' | relative_url }})]({{ '/assets/blogger/upload-007.jpg' | relative_url }})
 
 ... seleccionamos donde queremos que se creen...
 
-[![](/assets/blogger/upload-008.jpg)](/assets/blogger/upload-008.jpg)
+[![]({{ '/assets/blogger/upload-008.jpg' | relative_url }})]({{ '/assets/blogger/upload-008.jpg' | relative_url }})
 
 ... y listo.
 
 Ahora, crearemos un ManagedBean de alcance "Session" llamado BitacoraBean. Este es el que mostrará los datos en el formulario.
 
-[![](/assets/blogger/upload-009.jpg)](/assets/blogger/upload-009.jpg)
+[![]({{ '/assets/blogger/upload-009.jpg' | relative_url }})]({{ '/assets/blogger/upload-009.jpg' | relative_url }})
 
 No voy a detallar cada parte del código, porque es algo complejo. Además, el código colgado ya tiene sus propios comentarios. Pero sí voy a explicar partes principales de las clases principales.
 

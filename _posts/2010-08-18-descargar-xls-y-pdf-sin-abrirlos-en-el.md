@@ -16,7 +16,7 @@ tags:
 
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqsOe0PGFMzwEswvvzu4LnjI-KCO1YCvbXhbgGBQHAZskVDHbOb_W-sj7D7zFqXcb0C0U5Zy9BHFnmWta5KNKjigdPlS8f86AJTqjmxiXNYFCWscJko8YKq4AexdjYT3nNkvmOaYNt0o2R/s200/download-button.jpg)
 
-Anteriormente hice un post de cómo "[Descargar XLS y PDF sin abrirlos en el navegador](/2007/04/descargar-xls-y-pdf-sin-abrirlos-en-el.html)" pero fue realizado con PHP. Ahora les traigo el mismo ejemplo pero usando Servlet
+Anteriormente hice un post de cómo "[Descargar XLS y PDF sin abrirlos en el navegador]({{ '/2007/04/descargar-xls-y-pdf-sin-abrirlos-en-el.html' | relative_url }})" pero fue realizado con PHP. Ahora les traigo el mismo ejemplo pero usando Servlet
 
 Para realizar esto, es necesario tener un Servlet que reciba como parametro el `url` que le indica dónde está el archivo a mostrar para descargar. En este ejemplo he preparado para que descargue desde cualquier host.
 

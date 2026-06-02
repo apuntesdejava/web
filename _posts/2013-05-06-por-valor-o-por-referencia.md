@@ -62,7 +62,7 @@ Entonces... podemos concluir que** cuando son objetos, los parámetros son por r
 
 Listo, terminó mi apunte, y todos estamos satisfechos ¿Verdad que es bonito haber demostrado que los parámetros de tipo nativo son por valor y los de tipo objeto son por referencia?
 
-[![](/assets/blogger/3566373.jpg)](/assets/blogger/3566373.jpg)
+[![]({{ '/assets/blogger/3566373.jpg' | relative_url }})]({{ '/assets/blogger/3566373.jpg' | relative_url }})
 
 ¿por qué? Porque el código no es el mismo. Lo que hemos cambiado es valor de una variable que pertenece a otra variable.
 

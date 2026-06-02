@@ -13,7 +13,7 @@ tags:
 
 Hace un buen tiempo hice una encuesta sobre cómo participarían en un seminario o conferencia tecnológica.
 
-[![](/assets/blogger/encuesta.jpg)](/assets/blogger/encuesta.jpg)
+[![]({{ '/assets/blogger/encuesta.jpg' | relative_url }})]({{ '/assets/blogger/encuesta.jpg' | relative_url }})
 
 Solo respondieron la mitad de los visitantes a mi blog.. o sea 15, jejeje
 

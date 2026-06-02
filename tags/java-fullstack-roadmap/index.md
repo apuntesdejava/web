@@ -6,4 +6,4 @@ permalink: /tags/java-fullstack-roadmap/
 
 # Tag: #java #fullstack #roadmap
 
-- 2024-01-11 - [Roadmap Java Fullstack Developer 2024](/2024/01/roadmap-java-fullstack-developer.html)
+- 2024-01-11 - [Roadmap Java Fullstack Developer 2024]({{ '/2024/01/roadmap-java-fullstack-developer.html' | relative_url }})

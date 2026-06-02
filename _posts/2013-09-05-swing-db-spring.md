@@ -22,4 +22,4 @@ Por si acaso usa Java 7, y Apache DB, con la base de datos "Sample".
 
 Espero que les sea de utilidad.
 
-[![](/assets/blogger/swing_gui.png)](/assets/blogger/swing_gui.png)
+[![]({{ '/assets/blogger/swing_gui.png' | relative_url }})]({{ '/assets/blogger/swing_gui.png' | relative_url }})

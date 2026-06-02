@@ -90,7 +90,7 @@ La base de datos que usaremos es el [H2 Database](http://www.h2database.com/).
         </dependency>
 ```
 
-Recomiendo mucho que la conexión a la base de datos se encargue el contenedor web, y no que la aplicación lo haga. La aplicación solo debería conectarse usando el JNDI. Aquí una explicación en un post anterior: [DataSources en una aplicación Java EE](/2017/06/datasources-en-una-aplicacion-java-ee.html)
+Recomiendo mucho que la conexión a la base de datos se encargue el contenedor web, y no que la aplicación lo haga. La aplicación solo debería conectarse usando el JNDI. Aquí una explicación en un post anterior: [DataSources en una aplicación Java EE]({{ '/2017/06/datasources-en-una-aplicacion-java-ee.html' | relative_url }})
 
 <script src="https://bitbucket.org/apuntesdejava/db-spring-sample-web/src/master/src/main/webapp/META-INF/context.xml?embed=t"></script>
 

@@ -15,13 +15,13 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
 Comenzamos este año nuevo con la continuación del (creo yo) más esperado tema de tutorial: [RESTful](http://www.apuntesdejava.com/search/label/restful). Y esta vez hablaremos sobre el manejo de colecciones y objetos complejos. Por ahora será de manera básica y veremos poco a poco cómo hacerlo más y más complejo.
 
 ## Manejo de colecciones
 
-Para comenzar, tomaremos el mismo proyecto que vimos en el último [post](/2010/11/restful-la-forma-mas-ligera-de-hacer_25.html) y agregaremos otro recurso llamado `PersonaResource` con el path apuntando por `/listaPersonas`.
+Para comenzar, tomaremos el mismo proyecto que vimos en el último [post]({{ '/2010/11/restful-la-forma-mas-ligera-de-hacer_25.html' | relative_url }}) y agregaremos otro recurso llamado `PersonaResource` con el path apuntando por `/listaPersonas`.
 
 ¿Cómo hacer esto? Bien fácil:
 
@@ -92,7 +92,7 @@ Y veremos que en la respuesta nos devuelve con el ID de la persona autogenerada.
 
 Como se puede en esta imagen, está el envío de la data, y la respuesta del servidor.
 
-[![](/assets/blogger/rest-lista-001.jpg)](/assets/blogger/rest-lista-001.jpg)
+[![]({{ '/assets/blogger/rest-lista-001.jpg' | relative_url }})]({{ '/assets/blogger/rest-lista-001.jpg' | relative_url }})
 
 Esto es bastante fácil, porque es lo mismo que se vió en el anterior post. Ahora veremos como se obtiene una lista.
 
@@ -152,7 +152,7 @@ Pero como va a recibir un parámetro, por método `@GET` (es decir, como parte d
 
 Ahora, probemos con el "Test REST" de NetBeans (previo registro de objetos, claro está).
 
-[![](/assets/blogger/rest3-002.jpg)](/assets/blogger/rest3-002.jpg)
+[![]({{ '/assets/blogger/rest3-002.jpg' | relative_url }})]({{ '/assets/blogger/rest3-002.jpg' | relative_url }})
 
 Notemos que el nombre del parametro query no necesariamente tiene que ser el mismo nombre del parámetro del método de Java. Es decir, esto es totalmente válido:
 
@@ -229,11 +229,11 @@ Ahora, probemos con la siguiente cadena JSON (no olvidar que se selecciona POST 
 
 Y al obtener la lista de los objetos, se obtiene sin ningún problema. Ya sea en XML...
 
-[![](/assets/blogger/rest3-003.jpg)](/assets/blogger/rest3-003.jpg)
+[![]({{ '/assets/blogger/rest3-003.jpg' | relative_url }})]({{ '/assets/blogger/rest3-003.jpg' | relative_url }})
 
 ... o en JSON...
 
-[![](/assets/blogger/rest3-004.jpg)](/assets/blogger/rest3-004.jpg)
+[![]({{ '/assets/blogger/rest3-004.jpg' | relative_url }})]({{ '/assets/blogger/rest3-004.jpg' | relative_url }})
 
 Si quieres conocer más sobre los formatos de JSON, visita aquí: [http://www.json.org/json-es.html](http://www.json.org/json-es.html)
 

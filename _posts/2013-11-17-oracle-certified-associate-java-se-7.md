@@ -12,7 +12,7 @@ tags:
   - "off topic"
 ---
 
-[![](/assets/blogger/OCA_JavaSE7Programmer_clr.png)](/assets/blogger/OCA_JavaSE7Programmer_clr.png)
+[![]({{ '/assets/blogger/OCA_JavaSE7Programmer_clr.png' | relative_url }})]({{ '/assets/blogger/OCA_JavaSE7Programmer_clr.png' | relative_url }})
 
 Los que me siguen en [Facebook](http://facebook.com/apuntesdejava) y [Google+](http://google.com/+apuntesdejava) habrán notado que de cuando en cuando he estado posteando preguntas de "tipo certificación". No era para retarlos, ni para ver quien sabía más. Sencillamente era para compartir con ustedes - los seguidores de este humilde blog - algunas preguntas curiosas que he encontrado mientras estaba estudiando para mi primer examen de certificación: la [OCAJP 7](http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=458&get_params=p_track_id:JSE7Prog). Y, gracias a Dios, y a mucho estudio, aprobé `:)`. Y en este post quiero compartir mi experiencia para poder aprobar este examen.
 

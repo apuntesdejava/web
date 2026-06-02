@@ -8,20 +8,20 @@ permalink: /p/series.html
 canonical_url: https://www.apuntesdejava.com/p/series.html
 ---
 
-[![](/assets/blogger/13354-MLM3390915765_112012-O.jpg)](/assets/blogger/13354-MLM3390915765_112012-O.jpg)
+[![]({{ '/assets/blogger/13354-MLM3390915765_112012-O.jpg' | relative_url }})]({{ '/assets/blogger/13354-MLM3390915765_112012-O.jpg' | relative_url }})
 
 Aquí reuniré todas las series de tutoriales que he estado desarrollando en todos los post de este tutorial.
 
-- [RESTful... la forma más ligera de hacer WebServices](/p/restful-la-forma-mas-ligera-de-hacer.html)
+- [RESTful... la forma más ligera de hacer WebServices]({{ '/p/restful-la-forma-mas-ligera-de-hacer.html' | relative_url }})
 
-- [Conociendo RegEx](/p/conociendo-regex.html)
+- [Conociendo RegEx]({{ '/p/conociendo-regex.html' | relative_url }})
 
-- [Tutorial JSF 2.2](/p/tutorial-jsf-22.html)
+- [Tutorial JSF 2.2]({{ '/p/tutorial-jsf-22.html' | relative_url }})
 
-- [Java Web MVC](/p/java-web-mvc.html)
+- [Java Web MVC]({{ '/p/java-web-mvc.html' | relative_url }})
 
-- [Ajax con JSF 2.0](/p/ajax-con-jsf-20.html)
+- [Ajax con JSF 2.0]({{ '/p/ajax-con-jsf-20.html' | relative_url }})
 
-- [IO / NIO.2](/p/io-nio2.html)
+- [IO / NIO.2]({{ '/p/io-nio2.html' | relative_url }})
 
-- [Pruebas Unitarias a JPA y servicios REST con Arquillian + Payara](/p/pruebas-con-arquillian.html)
+- [Pruebas Unitarias a JPA y servicios REST con Arquillian + Payara]({{ '/p/pruebas-con-arquillian.html' | relative_url }})

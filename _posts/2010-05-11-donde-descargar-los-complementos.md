@@ -12,7 +12,7 @@ tags:
   - "trucos"
 ---
 
-En mi post "[Plugins curiosos para NetBeans 6.8](/2009/10/plugins-curiosos-para-netbeans-68.html)"olvidé mencionar cómo descargar estos plugins.
+En mi post "[Plugins curiosos para NetBeans 6.8]({{ '/2009/10/plugins-curiosos-para-netbeans-68.html' | relative_url }})"olvidé mencionar cómo descargar estos plugins.
 
 Realmente no pertenecen exclusivamente a la versión 6.8. Son complementos que están en fase de desarrollo, son útiles, pero no están en producción. Pero son muy buenos. Estos están disponibles en la versión de desarrollo de NetBeans.
 

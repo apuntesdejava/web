@@ -15,17 +15,17 @@ tags:
   - "tips"
 ---
 
-[![](/assets/blogger/nb-servers.png)](/assets/blogger/nb-servers.png)
+[![]({{ '/assets/blogger/nb-servers.png' | relative_url }})]({{ '/assets/blogger/nb-servers.png' | relative_url }})
 
 Por la mala experiencia que tengo con los instaladores en Windows, prefiero que los aplicativos sean unos archivos que se puedan descomprimir. Si no hay más remedio que instalarlos, pues lo hago.
 
 NetBeans tiene una *versión* "portable" siendo el instalador un archivo .zip con todo el IDE dentro. Lo bueno de esto es que el mismo .zip puede ser ejecutado en cualquier plataforma que tenga instalado el JDK. (Ese es el gran motivo por lo que uso poco el Eclipse).
 
-[![](/assets/blogger/nb.png)](/assets/blogger/nb.png)
+[![]({{ '/assets/blogger/nb.png' | relative_url }})]({{ '/assets/blogger/nb.png' | relative_url }})
 
 Lo malo de esto es que no incluye los servidores Java EE.
 
-[![](/assets/blogger/nb1.png)](/assets/blogger/nb1.png)
+[![]({{ '/assets/blogger/nb1.png' | relative_url }})]({{ '/assets/blogger/nb1.png' | relative_url }})
 
 Es algo obvio el motivo, ya que el instalador nativo genera todos los archivos y configuraciones necesarias para que el IDE funcione.... en cambio un .zip solo contiene el contenido.
 
@@ -39,7 +39,7 @@ Para descargar GlassFish, lo podemos hacer desde aquí.
 
 [https://glassfish.java.net/download.html](https://glassfish.java.net/download.html)
 
-[![](/assets/blogger/nb2.png)](/assets/blogger/nb2.png)
+[![]({{ '/assets/blogger/nb2.png' | relative_url }})]({{ '/assets/blogger/nb2.png' | relative_url }})
 
 Allí indica y sugiere como primera instancia que se utilice la versión .zip. La instalación lo dice claro: descomprimir el .zip. Y listo!
 
@@ -65,21 +65,21 @@ Bien, asumiendo que tengamos el Tomcat y el Glassfish ya sea instalado o descomp
 
 #### Tomcat
 
-[](/assets/blogger/nb5.png)
+[]({{ '/assets/blogger/nb5.png' | relative_url }})
 
 - Entrar al panel de Services, o presionar Ctrl+5.
 
-[![](/assets/blogger/nb3.png)](/assets/blogger/nb3.png)
+[![]({{ '/assets/blogger/nb3.png' | relative_url }})]({{ '/assets/blogger/nb3.png' | relative_url }})
 
 Como verán, puede ser que no haya ningún servidor en el nodo de Servidores. Y allí es donde hacemos clic derecho en el nodo "servers" y seleccionamos "Add Server..."
 
 - Seleccionamos "Apache Tomcat" y abajo le ponemos el nombre. Recomiendo que el nombre sea algo referente a lo que vamos  a usar, por ejemplo "Tomcat Test", o "Tomcat Desarrollo", o "Tomcat 7.0.35", etc.
-[![](/assets/blogger/nb4.png)](/assets/blogger/nb4.png)
+[![]({{ '/assets/blogger/nb4.png' | relative_url }})]({{ '/assets/blogger/nb4.png' | relative_url }})
 Clic en "Next"
 
 - Especificamos la ruta donde se encuentra el Tomcat, y donde estará la ruta de la configuración de Tomcat que se usará en NetBeans.
 
-[![](/assets/blogger/nb5.png)](/assets/blogger/nb5.png)
+[![]({{ '/assets/blogger/nb5.png' | relative_url }})]({{ '/assets/blogger/nb5.png' | relative_url }})
 
 Recomiendo mucho que se use esta opción, ya que el Tomcat quedará limpio de configuraciones e instalaciones. Si existe un problema en la configuración de nuestra aplicación, borramos esta carpeta y volvemos a configurar el Tomcat. Si la configuración estaría dentro de NetBeans, tendríamos que borrar todo el Tomcat para volverlo a configurar.
 Además, debemos poner un usuario y contraseña que es el que administrará el Tomcat desde NetBeans, esto es quien podrá desplegar y replegar las aplicaciones a ejecutarse en Tomcat desde NetBeans.
@@ -91,18 +91,18 @@ Clic en Finish, y listo.. ya tenemos el NetBeans con Tomcat
 Con GlassFish es la misma historia.
 
 - "Add Server...", seleccionamos GlassFish y escribimos el nombre de nuestro servidor para NetBeans
-[![](/assets/blogger/nb6.png)](/assets/blogger/nb6.png)
+[![]({{ '/assets/blogger/nb6.png' | relative_url }})]({{ '/assets/blogger/nb6.png' | relative_url }})
 Clic en "Next"
 
 - Seleccionamos la ruta donde tenemos instalado el GlassFish. Notar que se debe indicar la carpeta raiz del GlassFish, no la ruta del dominio.
 
-[![](/assets/blogger/nb7.png)](/assets/blogger/nb7.png)
+[![]({{ '/assets/blogger/nb7.png' | relative_url }})]({{ '/assets/blogger/nb7.png' | relative_url }})
 
 Clic en "Next"
 
 - Seleccionamos el dominio del GlassFish que usaremos para esta configuración de NetBeans con GlassFish. Por omisión crea el dominio **domain1** para comenzar.
 
-[![](/assets/blogger/nb8.png)](/assets/blogger/nb8.png)
+[![]({{ '/assets/blogger/nb8.png' | relative_url }})]({{ '/assets/blogger/nb8.png' | relative_url }})
 
 También podríamos configurar un servidor remoto, para ello debemos especificar en qué IP o nombre de computador se encuentra.
 Además, si el GlassFish que vamos a conectar necesita autenticación, le colocamos el usuario y contraseña.

@@ -68,6 +68,6 @@ EjbFacade facade= c.lookup("java:global/NombrePorlet/NombreEjbFacade!paquete.ejb
 </code>
 ```
 
-Algo más explicado sobre cómo acceder a las clases EJB 3.1 se encuentra en este post: [Cliente remoto de EJB 3.](/2010/05/cliente-remoto-de-ejb-31-en-glassfish.html)1
+Algo más explicado sobre cómo acceder a las clases EJB 3.1 se encuentra en este post: [Cliente remoto de EJB 3.]({{ '/2010/05/cliente-remoto-de-ejb-31-en-glassfish.html' | relative_url }})1
 
 Espero que les sea de utilidad.

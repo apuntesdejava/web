@@ -31,14 +31,14 @@ Ejecutamos el tomcat7w.exe desde el servidores, y nos mostrará la configuració
 -Dcom.sun.management.jmxremote.authenticate=false
 ```
 
-[![](/assets/blogger/tomcat7w.exe.png)](/assets/blogger/tomcat7w.exe.png)
+[![]({{ '/assets/blogger/tomcat7w.exe.png' | relative_url }})]({{ '/assets/blogger/tomcat7w.exe.png' | relative_url }})
 
 Luego, reiniciamos el servicio y listo.
 
 Ahora, desde el Java VisualVM, entramos a File > Add JMX Connection y agregamos el IP del servidor a monitorear, y el puerto, que en este caso, es 1001 (porque así lo pusimos en el Java Options)
 
-[![](/assets/blogger/add-jmx.png)](/assets/blogger/add-jmx.png)
+[![]({{ '/assets/blogger/add-jmx.png' | relative_url }})]({{ '/assets/blogger/add-jmx.png' | relative_url }})
 
  y listo, a comenzar a monitorear!
 
-[![](/assets/blogger/jvisualvm.png)](/assets/blogger/jvisualvm.png)
+[![]({{ '/assets/blogger/jvisualvm.png' | relative_url }})]({{ '/assets/blogger/jvisualvm.png' | relative_url }})

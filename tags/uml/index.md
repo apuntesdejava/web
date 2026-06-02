@@ -6,4 +6,4 @@ permalink: /tags/uml/
 
 # Tag: uml
 
-- 2015-12-07 - [UML en NetBeans](/2015/12/uml-en-netbeans.html)
+- 2015-12-07 - [UML en NetBeans]({{ '/2015/12/uml-en-netbeans.html' | relative_url }})

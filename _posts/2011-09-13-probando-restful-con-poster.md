@@ -17,7 +17,7 @@ tags:
   - "ajax"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
 Seguimos con RESTful en Java!
 
@@ -161,7 +161,7 @@ public class PersonaFacade {
 
 Ahora bien, una vez instalado el Poster en Firefox, lo abrimos haciendo clic en la barra inferior del navegador en el ícono color amarillo con una letra P. Esto nos abrirá la siguiente ventana:
 
-[![](/assets/blogger/poster01.png)](/assets/blogger/poster01.png)
+[![]({{ '/assets/blogger/poster01.png' | relative_url }})]({{ '/assets/blogger/poster01.png' | relative_url }})
 
 Es bastante fácil su utilización como lo veremos a continuación.
 
@@ -184,11 +184,11 @@ Para crear un nuevo objeto en la "base de datos" usando el servicio, necesitamos
 }
 ```
 
-[![](/assets/blogger/poster02.png)](/assets/blogger/poster02.png)
+[![]({{ '/assets/blogger/poster02.png' | relative_url }})]({{ '/assets/blogger/poster02.png' | relative_url }})
 
 Luego, hacemos clic en el botón central "POST". El Poster nos mostrará un resultado:
 
-[![](/assets/blogger/poster03.png)](/assets/blogger/poster03.png)
+[![]({{ '/assets/blogger/poster03.png' | relative_url }})]({{ '/assets/blogger/poster03.png' | relative_url }})
 
 Este resultado es porque se ha puesto que devuelva el objeto que se agregó.
 
@@ -198,15 +198,15 @@ Intentemos agregar más objetos y hacer POST por cada uno de ellos.
 
 Para obtener el listado de todos los objetos registrados en el servicio, nos aseguramos que el URL apunte a URI `/rest/persona` y hacemos clic en el botón GET. El Poster nos mostrará el siguiente contenido.
 
-[![](/assets/blogger/poster04a.png)](/assets/blogger/poster04a.png)
+[![]({{ '/assets/blogger/poster04a.png' | relative_url }})]({{ '/assets/blogger/poster04a.png' | relative_url }})
 
-[![](/assets/blogger/poster04.png)](/assets/blogger/poster04.png)
+[![]({{ '/assets/blogger/poster04.png' | relative_url }})]({{ '/assets/blogger/poster04.png' | relative_url }})
 
 Esto me devuelve el listado completo. Pero si solo quiero uno de ellos, y conozco el ID, pondremos en el URI el ID de una persona. Por ejemplo `/rest/persona/2` y luego hacemos clic en "GET".
 
-[![](/assets/blogger/poster05a.png)](/assets/blogger/poster05a.png)
+[![]({{ '/assets/blogger/poster05a.png' | relative_url }})]({{ '/assets/blogger/poster05a.png' | relative_url }})
 
-[![](/assets/blogger/poster05.png)](/assets/blogger/poster05.png)
+[![]({{ '/assets/blogger/poster05.png' | relative_url }})]({{ '/assets/blogger/poster05.png' | relative_url }})
 
 ### Update
 
@@ -237,11 +237,11 @@ Como podemos ver, todas las peticiones que hemos hecho (PUT y POST) tienen el fo
 
 .. y hacemos clic en "Add/Change"
 
-[![](/assets/blogger/poster06.png)](/assets/blogger/poster06.png)
+[![]({{ '/assets/blogger/poster06.png' | relative_url }})]({{ '/assets/blogger/poster06.png' | relative_url }})
 
 Y luego, hagamos el GET de todos los objetos para visualizar el contenido.
 
-[![](/assets/blogger/poster06a.png)](/assets/blogger/poster06a.png)
+[![]({{ '/assets/blogger/poster06a.png' | relative_url }})]({{ '/assets/blogger/poster06a.png' | relative_url }})
 
 ## Recursos
 

@@ -47,7 +47,7 @@ Para este tutorial utilicé lo siguiente:
 
 - Liferay 6.0.5 en Tomcat 6.0 (Descargable desde aquí: [http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.0.5/liferay-portal-tomcat-6.0.5.zip/download](http://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.0.5/liferay-portal-tomcat-6.0.5.zip/download))
 
-Si quieres saber cómo configurar el Liferay con el NetBeans, te recomiendo mi anterior post: [Nuestro primer portlet en Liferay](/2010/07/nuestro-primer-portlet-en-liferay.html). Aunque se explica utilizando el Liferay + GlassFish, el agregar el servidor Liferay al NetBeans es el mismo procedimiento.
+Si quieres saber cómo configurar el Liferay con el NetBeans, te recomiendo mi anterior post: [Nuestro primer portlet en Liferay]({{ '/2010/07/nuestro-primer-portlet-en-liferay.html' | relative_url }}). Aunque se explica utilizando el Liferay + GlassFish, el agregar el servidor Liferay al NetBeans es el mismo procedimiento.
 
 ### Creando el proyecto Hook
 

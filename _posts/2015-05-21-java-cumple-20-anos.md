@@ -11,7 +11,7 @@ tags:
   - "java20"
 ---
 
-[![Celebrating 20 Years of Java](/assets/blogger/Blogcake.jpeg)](/assets/blogger/Blogcake.jpeg)
+[![Celebrating 20 Years of Java]({{ '/assets/blogger/Blogcake.jpeg' | relative_url }})]({{ '/assets/blogger/Blogcake.jpeg' | relative_url }})
 
 Celebramos 20 años desde que salió a la luz la primera versión de Java y puesta para uso público. Desde entonces más de 9 millones de desarrolladores de Java lo trabajan en la mayoría de las industrias. La comunidad Java constantemente está innovando y cambiando nuestros días normales.
 

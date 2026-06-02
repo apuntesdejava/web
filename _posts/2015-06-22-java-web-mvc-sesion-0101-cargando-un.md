@@ -18,7 +18,7 @@ tags:
   - "netbeans"
 ---
 
-[![](/assets/blogger/javaee1_large.png)](/assets/blogger/javaee1_large.png)
+[![]({{ '/assets/blogger/javaee1_large.png' | relative_url }})]({{ '/assets/blogger/javaee1_large.png' | relative_url }})
 
 Si vieron el [vídeo](https://youtu.be/9JwXoL0FSBs) y [post](http://goo.gl/fb/jpwwKE) anterior, habrán visto que propongo cargar la foto del usuario que se está registrando.. pero no aparece en el tutorial. Y si no lo han visto, ahora ya lo saben.
 

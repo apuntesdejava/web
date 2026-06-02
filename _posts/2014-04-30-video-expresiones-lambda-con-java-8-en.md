@@ -14,7 +14,7 @@ tags:
   - "video"
 ---
 
-[![Expresiones Lambda con Java 8 en NetBeans 8](/assets/blogger/java-lambda-expression.png)](/assets/blogger/java-lambda-expression.png)
+[![Expresiones Lambda con Java 8 en NetBeans 8]({{ '/assets/blogger/java-lambda-expression.png' | relative_url }})]({{ '/assets/blogger/java-lambda-expression.png' | relative_url }})
 
 Después de tiempo publico un vídeo sobre Java. Esta vez demostraré el uso de las expresiones Lambda usando NetBeans IDE 8, ya que éste permite *corregir* una expresión común Java a una expresión Lambda. Me he basado del tutorial "[Lambda Expressions](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)". Allí podrán encontrar más explicación de esta nomenclatura.
 

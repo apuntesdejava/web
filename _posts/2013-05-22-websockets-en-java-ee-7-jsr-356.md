@@ -20,7 +20,7 @@ tags:
   - "websockets"
 ---
 
-[![](/assets/blogger/websocket-lifecycle.png)](/assets/blogger/websocket-lifecycle.png)
+[![]({{ '/assets/blogger/websocket-lifecycle.png' | relative_url }})]({{ '/assets/blogger/websocket-lifecycle.png' | relative_url }})
 
 Los [WebSockets](http://es.wikipedia.org/wiki/WebSocket) son una manera de poder comunicarse vía web entre un cliente y un servidor. A diferencia con otras tecnologías parecidas como los RESTful WebService, es que esta tecnología es bidireccional. El RESTful tiene que constantemente pedir al servidor para ver si hay un cambio, y con algunas técnicas "push" se puede simular una comunicación bidireccional. Con WebSockets, la comunicación es nativa.
 

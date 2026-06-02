@@ -11,7 +11,7 @@ tags:
   - "#java #fullstack #roadmap"
 ---
 
-[![](/assets/blogger/_a973a84c-b018-4557-8ffa-7d8dd1eb8f91.jpeg)](/assets/blogger/_a973a84c-b018-4557-8ffa-7d8dd1eb8f91.jpeg)
+[![]({{ '/assets/blogger/_a973a84c-b018-4557-8ffa-7d8dd1eb8f91.jpeg' | relative_url }})]({{ '/assets/blogger/_a973a84c-b018-4557-8ffa-7d8dd1eb8f91.jpeg' | relative_url }})
 
 Vuelvo al blog después de tiempo, porque no tenía tiempo 😁
 

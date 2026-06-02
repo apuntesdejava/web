@@ -6,4 +6,4 @@ permalink: /tags/senna/
 
 # Tag: senna
 
-- 2014-10-07 - [JSF Facelets + Senna](/2014/10/jsf-facelets-senna.html)
+- 2014-10-07 - [JSF Facelets + Senna]({{ '/2014/10/jsf-facelets-senna.html' | relative_url }})

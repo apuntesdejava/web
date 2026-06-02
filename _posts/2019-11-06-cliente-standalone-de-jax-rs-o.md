@@ -94,15 +94,15 @@ Una manera para probarlo es ejecutándolo y llamando desde un cliente:
 
 Insertando un registro:
 
-[![](/assets/blogger/2019-11-06_17-40-37.png)](/assets/blogger/2019-11-06_17-40-37.png)
+[![]({{ '/assets/blogger/2019-11-06_17-40-37.png' | relative_url }})]({{ '/assets/blogger/2019-11-06_17-40-37.png' | relative_url }})
 
 Listando los registros:
 
-[![](/assets/blogger/2019-11-06_17-43-17.png)](/assets/blogger/2019-11-06_17-43-17.png)
+[![]({{ '/assets/blogger/2019-11-06_17-43-17.png' | relative_url }})]({{ '/assets/blogger/2019-11-06_17-43-17.png' | relative_url }})
 
 Borrando ese registro (en mi caso, el 97)
 
-[![](/assets/blogger/2019-11-06_17-44-30.png)](/assets/blogger/2019-11-06_17-44-30.png)
+[![]({{ '/assets/blogger/2019-11-06_17-44-30.png' | relative_url }})]({{ '/assets/blogger/2019-11-06_17-44-30.png' | relative_url }})
 
 ## El Cliente
 

@@ -14,7 +14,7 @@ tags:
   - "trucos"
 ---
 
-[![](/assets/blogger/logo-mysql-110x57.png)](/assets/blogger/logo-mysql-110x57.png)
+[![]({{ '/assets/blogger/logo-mysql-110x57.png' | relative_url }})]({{ '/assets/blogger/logo-mysql-110x57.png' | relative_url }})
 
 Este es otro apunte "No Java"
 

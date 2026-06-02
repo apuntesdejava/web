@@ -12,7 +12,7 @@ tags:
   - "tutorial"
 ---
 
-[![](/assets/blogger/Duke_8-copy-300x196.png)](/assets/blogger/Duke_8-copy-300x196.png)
+[![]({{ '/assets/blogger/Duke_8-copy-300x196.png' | relative_url }})]({{ '/assets/blogger/Duke_8-copy-300x196.png' | relative_url }})
 
 En este artículo veremos sobre un nuevo paquete que existe en Java 8, se trata del paqueta [java.time](http://docs.oracle.com/javase/8/docs/api/java/time/package-frame.html). Este paquete es una extensión a las clases `java.util.Date` y `java.util.Calendar` que vemos un poco limitado para manejo de fechas, horas y localización.
 

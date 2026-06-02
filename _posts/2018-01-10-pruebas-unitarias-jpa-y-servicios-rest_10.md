@@ -364,7 +364,7 @@ En las líneas 11 al 13 se está diciendo al glassfish que la propiedad `resourc
 
 Finalmente, nuestra estructura de los archivos de recurso para nuestro entorno de prueba, debe lucir así:
 
-[![](/assets/blogger/arquillian-jpa-resources.png)](/assets/blogger/arquillian-jpa-resources.png)
+[![]({{ '/assets/blogger/arquillian-jpa-resources.png' | relative_url }})]({{ '/assets/blogger/arquillian-jpa-resources.png' | relative_url }})
 
 ## Realizando la prueba del registro de Productos
 
@@ -378,11 +378,11 @@ Analicemos el resultado obtenido en la ventana de comandos.
 
 Primero veremos que se pudo crear los recursos de la conexión a la base de datos. Eso es bueno:
 
-[![](/assets/blogger/arquillian-run-test-01jdbc.png)](/assets/blogger/arquillian-run-test-01jdbc.png)
+[![]({{ '/assets/blogger/arquillian-run-test-01jdbc.png' | relative_url }})]({{ '/assets/blogger/arquillian-run-test-01jdbc.png' | relative_url }})
 
 Más abajo veremos nuestros mensajes en el Log, y también las llamadas que hace el JPA. Finalmente se ve el resultado de nuestros objetos creados en la base de datos.
 
-[![](/assets/blogger/arquillian-run-test-01-insert.png)](/assets/blogger/arquillian-run-test-01-insert.png)
+[![]({{ '/assets/blogger/arquillian-run-test-01-insert.png' | relative_url }})]({{ '/assets/blogger/arquillian-run-test-01-insert.png' | relative_url }})
 
 Bien, hasta aquí ya hemos registrado unos cuantos objetos, y vemos que funciona correctamente. Ahora nos falta realizar una venta normal. Implicará:
 
@@ -579,7 +579,7 @@ Las bases de datos permitidos por DBUnit son:
 
 Ahora, ejecutemos la prueba:
 
-[![](/assets/blogger/arquillian-run-test-02-update.png)](/assets/blogger/arquillian-run-test-02-update.png)
+[![]({{ '/assets/blogger/arquillian-run-test-02-update.png' | relative_url }})]({{ '/assets/blogger/arquillian-run-test-02-update.png' | relative_url }})
 
 He marcado los mensajes importantes:
 

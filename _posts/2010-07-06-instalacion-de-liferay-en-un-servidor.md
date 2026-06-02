@@ -17,7 +17,7 @@ tags:
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtW0KC2fxfz8nJE3tZBsnsUvVL2MdeqtTJE-0cIwSRRwWVYHSfyaJDbyhLC0IxYv41Bsobl2lZ3UFwa0ge-RLa-cE2lbrrrt7uei-saBoZsLF-Zl7RThiXqcCd33n4MkKqXeHrIL-D-FVN/s1600/liferay-logo.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtW0KC2fxfz8nJE3tZBsnsUvVL2MdeqtTJE-0cIwSRRwWVYHSfyaJDbyhLC0IxYv41Bsobl2lZ3UFwa0ge-RLa-cE2lbrrrt7uei-saBoZsLF-Zl7RThiXqcCd33n4MkKqXeHrIL-D-FVN/s1600/liferay-logo.png)
 
-En un [anterior post](/2010/06/portales-en-java.html) mencioné los Portales en Java, y la facilidad que nos da el utilizar una plataforma con muchas funcionalidades, y nosotros simplemente deberíamos hacer los componentes que faltan. Estos componentes se llaman Portlets.
+En un [anterior post]({{ '/2010/06/portales-en-java.html' | relative_url }}) mencioné los Portales en Java, y la facilidad que nos da el utilizar una plataforma con muchas funcionalidades, y nosotros simplemente deberíamos hacer los componentes que faltan. Estos componentes se llaman Portlets.
 
 Ahora mencionaré uno de los gestores de Portlets en Java que, según mi opinión, es bastante útil. Su nombre LIFERAY. Pero no hablaré de sus cualidades, ni todo lo que puede hacer.. eso ya lo hizo [Pedro Edison en su blog](http://periospino.blogspot.com/2010/03/gestor-de-contenidos-java-el-poderoso.html) `:)`, y como no hay que amontonar la red con lo mismo, esta vez mostraré cómo instalar el LIFERAY desde cero. No desde la instalación de un .exe, sino desde un archivo .war y sobre GlassFish v3 usando MySQL como gestor de base de datos.
 

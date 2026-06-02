@@ -13,7 +13,7 @@ tags:
   - "comentarios"
 ---
 
-[![Java EE 7 First Look](/assets/blogger/18990246.jpg)](/assets/blogger/18990246.jpg)
+[![Java EE 7 First Look]({{ '/assets/blogger/18990246.jpg' | relative_url }})]({{ '/assets/blogger/18990246.jpg' | relative_url }})
 
 Acabo de leer el libro "[Java EE 7 First Look](http://www.packtpub.com/java-ee-7-first-look/book)" y me pareció un buen libro para poder conocer un poco más sobre la Java EE 7. No es un tutorial para aprender a desarrollar Java EE. Está orientado para los que conocen la tecnología y desean conocer más sobre la nueva versión.
 

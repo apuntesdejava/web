@@ -1,4 +1,5 @@
 title: "Apuntes de Java"
+baseurl: /web
 lang: es
 timezone: America/Lima
 permalink: /:year/:month/:title.html

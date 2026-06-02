@@ -13,7 +13,7 @@ tags:
   - "javascript"
 ---
 
-[![NetBeans con Node.js](/assets/blogger/nodejs-light.png)](/assets/blogger/nodejs-light.png)
+[![NetBeans con Node.js]({{ '/assets/blogger/nodejs-light.png' | relative_url }})]({{ '/assets/blogger/nodejs-light.png' | relative_url }})
 
 La nueva versión de NetBeans 8.1 permitirá desarrollar HTML5 con Node.
 

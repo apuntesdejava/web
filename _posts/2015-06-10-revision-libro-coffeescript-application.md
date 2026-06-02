@@ -13,7 +13,7 @@ tags:
   - "opinion"
 ---
 
-![Revisión libro: CoffeeScript Application Development Cookbook](/assets/blogger/9691OS.jpg.png)
+![Revisión libro: CoffeeScript Application Development Cookbook]({{ '/assets/blogger/9691OS.jpg.png' | relative_url }})
 
 Impresionante manera de mostrar esta extensión de JavaScript, volviéndolo totalmente potente para aplicaciones de todo tipo.
 

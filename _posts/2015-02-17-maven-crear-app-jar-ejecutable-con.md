@@ -14,7 +14,7 @@ tags:
 
 [![Maven: Crear app .jar ejecutable con bibliotecas dependientes](http://maven.apache.org/images/maven-logo-2.gif)](http://maven.apache.org/images/maven-logo-2.gif)
 
-Lo que me gusta de NetBeans es que - al usar su propia creación de proyectos basado en [Apache Ant](http://ant.apache.org/) - es que crea una carpeta llamada `dist` que tiene todo lo necesario para que pueda ser distribuido y ejecutado en cualquier computador que tenga JVM. Hace un tiempo hice un post que ampliaba esta funcionalidad para que al final quedara todo empaquetado en un archivo zip: [Empaquetar una aplicación para distribuir, desde NetBeans](/2010/06/empaquetar-una-aplicacion-para.html). Ahora que estoy usando un poco más de [Maven](http://maven.apache.org/), noté que eso prepara los archivos como lo hacía con Ant. No los culpo... pero quiero hacer algo igual!.
+Lo que me gusta de NetBeans es que - al usar su propia creación de proyectos basado en [Apache Ant](http://ant.apache.org/) - es que crea una carpeta llamada `dist` que tiene todo lo necesario para que pueda ser distribuido y ejecutado en cualquier computador que tenga JVM. Hace un tiempo hice un post que ampliaba esta funcionalidad para que al final quedara todo empaquetado en un archivo zip: [Empaquetar una aplicación para distribuir, desde NetBeans]({{ '/2010/06/empaquetar-una-aplicacion-para.html' | relative_url }}). Ahora que estoy usando un poco más de [Maven](http://maven.apache.org/), noté que eso prepara los archivos como lo hacía con Ant. No los culpo... pero quiero hacer algo igual!.
 
 Ok, por ahora no podré empaquetarlo en un archivo .zip, pero al menos quisiera que esté el .jar listo para ser ejecutado con el comando `java -jar MiApp.jar` y que incluya los .jars necesarios para mi ejecución.
 

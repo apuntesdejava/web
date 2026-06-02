@@ -14,7 +14,7 @@ tags:
   - "off topic"
 ---
 
-![](/assets/blogger/backup1.png)
+![]({{ '/assets/blogger/backup1.png' | relative_url }})
 
 Comparto otro post no java (OPNJ) referente a MySQL.
 

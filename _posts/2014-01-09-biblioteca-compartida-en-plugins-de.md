@@ -13,7 +13,7 @@ tags:
   - "plugins"
 ---
 
-[![](/assets/blogger/heading.png)](/assets/blogger/heading.png)
+[![]({{ '/assets/blogger/heading.png' | relative_url }})]({{ '/assets/blogger/heading.png' | relative_url }})
 
 Volviendo un rato con [+Liferay](https://plus.google.com/110984633913716210797) (y como son apuntes principalmente para que yo no me olvide), voy a compartir un truco (¿?) que no lo vi en algún tutorial, pero que lo usan mucho en el desarrollo de plugins para este CMS.
 

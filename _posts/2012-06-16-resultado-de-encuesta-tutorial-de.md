@@ -17,19 +17,19 @@ tags:
   - "opinion"
 ---
 
-[![](/assets/blogger/encuesta.jpg)](/assets/blogger/encuesta.jpg)
+[![]({{ '/assets/blogger/encuesta.jpg' | relative_url }})]({{ '/assets/blogger/encuesta.jpg' | relative_url }})
 
 Bueno, la cosa estuvo reñida. Pero aquí los resultados de la encuesta sobre qué software utilizar para el curso de Liferay que estoy elaborando.
 
 **¿Qué RDBMS utilizar?**
 
-[![](/assets/blogger/rbdms.png)](/assets/blogger/rbdms.png)
+[![]({{ '/assets/blogger/rbdms.png' | relative_url }})]({{ '/assets/blogger/rbdms.png' | relative_url }})
 
 Sinceramente pensé que iban a pedir con Oracle o PostgreSQL, pero bueno, es lo que la mayoría ha pedido.
 
 **¿En qué tipo de servidor Java EE te gustaría que se tratase en este tutorial?**
 
-[![](/assets/blogger/javaee.png)](/assets/blogger/javaee.png)
+[![]({{ '/assets/blogger/javaee.png' | relative_url }})]({{ '/assets/blogger/javaee.png' | relative_url }})
 
 Esto sí estuvo bien reñido entre Tomcat y GlassFish. Yo pensé que iban a pedir JBoss o WebLogic, que eso veo que siempre usan y preguntan. Que raro, bueno, eso solo una encuesta.
 

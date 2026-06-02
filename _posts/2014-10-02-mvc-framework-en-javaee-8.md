@@ -13,7 +13,7 @@ tags:
   - "comentarios"
 ---
 
-[![](/assets/blogger/mvc.png)](/assets/blogger/mvc.png)
+[![]({{ '/assets/blogger/mvc.png' | relative_url }})]({{ '/assets/blogger/mvc.png' | relative_url }})
 
 Existe un nuevo [JSR](https://jcp.org/en/jsr/detail?id=371) para el MVC 1.0 que se debería incluir en el Java EE 8. Ya hemos trabajado por mucho tiempo con frameworks que implementan MVC como Struts, Spring MVC y JSF. La pregunta es ¿por qué necesitamos otro MVC? ¿No basta con el estándar de JSF? Aquí comentaremos un poco en qué consiste este MVC que aparecerá en JvaEE8
 
@@ -27,7 +27,7 @@ Hay otros tipos de esquemas, pero nos quedaremos con estos dos. Al final del pos
 
 ### MVC orientado al interfaz de usuario = JSF
 
-[![](/assets/blogger/jsfcomponent-framework-2280471.png)](/assets/blogger/jsfcomponent-framework-2280471.png)
+[![]({{ '/assets/blogger/jsfcomponent-framework-2280471.png' | relative_url }})]({{ '/assets/blogger/jsfcomponent-framework-2280471.png' | relative_url }})
 
 En JSF, el modelo es CDI, la vista son facelets y el controlador es el ciclo de vida de JSF, como se muestra en la imagen de la izquierda. Una marca distintiva que el MVC está orientado al interfaz de usuario es el concepto de IoC ([Inversión de Control](http://es.wikipedia.org/wiki/Inversi%C3%B3n_de_control)) que consiste en que el MVC tiene su propio flujo y nos da espacios específicos por donde nosotros podemos ingresar alguna programación. Lo notamos en los JSF, donde nosotros específicamos facelets y estos se arman en todo el HTML creado por el framework (que agrega más código javascript, tags especiales, validaciones, etc.) Además, nosotros no recibimos un submit de tipo POST/GET, simplemente nuestro ManagedBean utiliza los valores que en algún momento alguien lo ha recibido y nosotros nos limitamos a utilizar los valores. Bueno, ya no nos preocupamos de la validación y de que el HTML esté bien escrito ¿cierto?
 
@@ -65,7 +65,7 @@ Veremos un ejemplo de código que muestra el extremo del IoC para mostrar el con
    </html>
 ```
 
-Este es una página HTML simple con componentes JSF (tal como lo vimos en un anterior post sobre [JSF con HTML5](/2014/08/tutorial-jsf-22-sesion-8-html5.html)). El símbolo para buscar se escribe en el campo de texto de nombre "textField". El botón para enviar es un `input` con tipo `submit`, que recibe un método `actionListener`. En este método es donde podemos programar para hacer que busque el símbolo en la base de datos. Además está el componente `<f:ajax />` dentro del botón. Esto hace que el botón tenga efecto ajax, permitiendo el envío del formulario y la actualización de la página se haga automáticamente usando `XmlHttpRequest`. Finalmente hay un div que se muestra si el info del bean no está vacío, que sería el resultado de la búsqueda.
+Este es una página HTML simple con componentes JSF (tal como lo vimos en un anterior post sobre [JSF con HTML5]({{ '/2014/08/tutorial-jsf-22-sesion-8-html5.html' | relative_url }})). El símbolo para buscar se escribe en el campo de texto de nombre "textField". El botón para enviar es un `input` con tipo `submit`, que recibe un método `actionListener`. En este método es donde podemos programar para hacer que busque el símbolo en la base de datos. Además está el componente `<f:ajax />` dentro del botón. Esto hace que el botón tenga efecto ajax, permitiendo el envío del formulario y la actualización de la página se haga automáticamente usando `XmlHttpRequest`. Finalmente hay un div que se muestra si el info del bean no está vacío, que sería el resultado de la búsqueda.
 
 Aquí tenemos otra porción de código del managedbean que es llamado por el nombre `#{bean}` en el JSF.
 
@@ -111,7 +111,7 @@ Las bondades de este enfoque comienzan a disminuir cuando tenemos requerimientos
 
 En contraste al enfoque anterior mostrado, el MVC que se propone como MVC 1.0 se puede llamar "MVC orientado a la acción". Este estilo se puede ver en la siguiente figura. Para los desarrolladores de [Apache Struts](http://struts.apache.org/) y [Spring MVC](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/mvc.html) les debe ser conocido.
 
-[![](/assets/blogger/jsfactionframework-2280469.png)](/assets/blogger/jsfactionframework-2280469.png)
+[![]({{ '/assets/blogger/jsfactionframework-2280469.png' | relative_url }})]({{ '/assets/blogger/jsfactionframework-2280469.png' | relative_url }})
 
 El controlador envía (o *despacha*) a una acción específica, basada en la información que está en la petición. Cada acción hace una cosa específica para transformar la solicitud y lo procesa de acuerdo a lo necesario, y si es necesario actualiza el modelo. Este enfoque no solo evita ocultar el modelo request/response de HTTP, sino también no indica qué especificaciones se deben tener en cuenta de HTML/CSS/JS respecto al interfaz de usuario.
 
@@ -160,7 +160,7 @@ Nuevamente comenzamos con un simple JSP:
    </html>
 ```
 
-En este enfoque, la hoja de estilos (CSS) se debe insertar manualmente usando la instrucción `@import` en la sección `<head>`. Si la página necesita usar javascript, se deberá insertar de la misma manera. Con JSF, estos recursos se insertan automáticamente cuando indicamos los recursos a necesitar (Para más detalles de Recursos en JSF, ver el post [Tutorial JSF 2.2: Recursos](/2014/06/tutorial-jsf-22-sesion-6-recursos.html)). En el ejemplo anterior de symbol, el uso de `<f:ajax/>` provoca una referencia Javascript para que sea incluido en la página. La aplicación Bookstore usa varias expresiones EL, comenzando con el elemento `<h1>`. Este bean se encuentra ubicado en el alcance del framework MVC. JSTL interactúa con la colección de libros en la variable `${it}`, en la etiqueta `<c:forEach/>`
+En este enfoque, la hoja de estilos (CSS) se debe insertar manualmente usando la instrucción `@import` en la sección `<head>`. Si la página necesita usar javascript, se deberá insertar de la misma manera. Con JSF, estos recursos se insertan automáticamente cuando indicamos los recursos a necesitar (Para más detalles de Recursos en JSF, ver el post [Tutorial JSF 2.2: Recursos]({{ '/2014/06/tutorial-jsf-22-sesion-6-recursos.html' | relative_url }})). En el ejemplo anterior de symbol, el uso de `<f:ajax/>` provoca una referencia Javascript para que sea incluido en la página. La aplicación Bookstore usa varias expresiones EL, comenzando con el elemento `<h1>`. Este bean se encuentra ubicado en el alcance del framework MVC. JSTL interactúa con la colección de libros en la variable `${it}`, en la etiqueta `<c:forEach/>`
 
 El `index.jsp` se muestra implícitamente cuando un requerimiento GET se hace a la URL raíz de la aplicación web. Es decir, si la aplicación se llama "BookStore", el JSP se invocará cuando se llame a http://localhost:8080/BookStore. Eso sucede porque existe la anotación JAX-RS `@Path("/")` en el siguiente código.
 

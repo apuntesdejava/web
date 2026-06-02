@@ -13,13 +13,13 @@ tags:
   - "java 7"
 ---
 
-[![Conociendo RegEx](/assets/blogger/regex.jpg)](/assets/blogger/regex.jpg)
+[![Conociendo RegEx]({{ '/assets/blogger/regex.jpg' | relative_url }})]({{ '/assets/blogger/regex.jpg' | relative_url }})
 
 Este post tiene por objetivo aprender un poco sobre las expresiones regulares.
 
 Conoceremos al menos lo más básico como para que uno pueda dar el examen de certificación, y - con la práctica y experiencia - pueda uno llegar a ser tan experto como este tipo:
 
-[![](/assets/blogger/code-03.gif)](/assets/blogger/code-03.gif)
+[![]({{ '/assets/blogger/code-03.gif' | relative_url }})]({{ '/assets/blogger/code-03.gif' | relative_url }})
 
 (Indios)
 

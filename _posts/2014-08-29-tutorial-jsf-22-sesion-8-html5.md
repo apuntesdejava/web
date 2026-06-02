@@ -17,7 +17,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Tutorial JSF 2.2 - Sesión 8: HTML5](/assets/blogger/HTML5_Logo_512.png)](/assets/blogger/HTML5_Logo_512.png)
+[![Tutorial JSF 2.2 - Sesión 8: HTML5]({{ '/assets/blogger/HTML5_Logo_512.png' | relative_url }})]({{ '/assets/blogger/HTML5_Logo_512.png' | relative_url }})
 
 Esta vez hablaremos sobre la novísima versión de HTML que ya se ha vuelto popular, y que revoluciona el desarrollo de aplicaciones web. Es nada menos que el HTML5.
 

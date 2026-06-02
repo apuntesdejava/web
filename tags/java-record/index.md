@@ -6,4 +6,4 @@ permalink: /tags/java-record/
 
 # Tag: java record
 
-- 2022-07-15 - [JDK Record ¿Lo necesito?](/2022/07/jdk-record-lo-necesito.html)
+- 2022-07-15 - [JDK Record ¿Lo necesito?]({{ '/2022/07/jdk-record-lo-necesito.html' | relative_url }})
