@@ -13,7 +13,7 @@ tags:
   - "liferay"
 ---
 
-[![Instalación de Liferay 6.2 en GlassFish 4.0](/assets/blogger/heading.png)](/assets/blogger/heading.png)
+[![Instalación de Liferay 6.2 en GlassFish 4.0]({{ '/assets/blogger/heading.png' | relative_url }})]({{ '/assets/blogger/heading.png' | relative_url }})
 
 Aquí un nuevo tutorial sobre la instalación de la última versión de [Liferay](http://www.liferay.com/)(6.2) sobre la última versión de [GlassFish](https://glassfish.java.net/) 4.0.
 

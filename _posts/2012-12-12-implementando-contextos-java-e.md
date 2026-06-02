@@ -14,7 +14,7 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/3075injection.jpg)](/assets/blogger/3075injection.jpg)
+[![]({{ '/assets/blogger/3075injection.jpg' | relative_url }})]({{ '/assets/blogger/3075injection.jpg' | relative_url }})
 
 La inyección de dependencia es una técnica popular en el desarrollo de aplicaciones empresariales java. En una inyección de dependencia, también llamada **Inversión de Control (Inversion of Control - IoC)**, un componente especifica los recursos de los que depende.
 

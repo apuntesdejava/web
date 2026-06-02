@@ -11,7 +11,7 @@ tags:
   - "java ee"
 ---
 
-[![Convirtiendo Aplicaciones Java EE monolíticos a Microservicios](/assets/blogger/micro-service-architecture.png)](/assets/blogger/micro-service-architecture.png)
+[![Convirtiendo Aplicaciones Java EE monolíticos a Microservicios]({{ '/assets/blogger/micro-service-architecture.png' | relative_url }})]({{ '/assets/blogger/micro-service-architecture.png' | relative_url }})
 
 (Traducción libre de [Monolithic to Microservices Refactoring for Java EE Applications](https://dzone.com/articles/monolithic-to-microservices-refactoring-for-java-e?oid=top_cta) de  [+Arun Gupta](https://plus.google.com/101195212405190467512) )
 
@@ -39,7 +39,7 @@ Asumamos que  su aplicación monolítica no está diseñada como una gran bola d
 
 Aquí una aplicación WAR típica monolítica:
 
-[![](/assets/blogger/javaee-monolithic.png)](/assets/blogger/javaee-monolithic.png)
+[![]({{ '/assets/blogger/javaee-monolithic.png' | relative_url }})]({{ '/assets/blogger/javaee-monolithic.png' | relative_url }})
 
 Esta aplicación monolítica tiene:
 
@@ -63,7 +63,7 @@ Bien, ya hemos visto todo, pero me gustaría ver cómo convertir un código mono
 
 En primer lugar, echemos un vistazo a la estructura general.
 
-[![](/assets/blogger/javaee-microservices.png)](/assets/blogger/javaee-microservices.png)
+[![]({{ '/assets/blogger/javaee-microservices.png' | relative_url }})]({{ '/assets/blogger/javaee-microservices.png' | relative_url }})
 
 Aquí las piezas claves son:
 

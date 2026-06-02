@@ -21,7 +21,7 @@ tags:
   - "comentarios"
 ---
 
-[![](/assets/blogger/3166EN.jpg)](/assets/blogger/3166EN.jpg)
+[![]({{ '/assets/blogger/3166EN.jpg' | relative_url }})]({{ '/assets/blogger/3166EN.jpg' | relative_url }})
 
 [@Mick Knutson](https://twitter.com/mickknutson) publica su libro "[Java EE 6 Cookbook for Securing, Tuning, and Extending Enterprise Applications](http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book)" donde se muestra, de manera general y concisa, los aspectos de seguridad, rendimiento y mejorar las aplicaciones Java EE 6. Aquí, mis comentarios del libro.
 

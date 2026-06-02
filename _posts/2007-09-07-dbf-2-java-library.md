@@ -37,4 +37,4 @@ Ah! y está bajo licencia [GNU General Public License v3](http://www.gnu.org/lic
 
 ## ¡ACTUALIZACIÓN!
 
-He mudado el proyecto a otro espacio. Más información aquí: [https://www.apuntesdejava.com/2015/05/dbf2java-library-mudado.html](/2015/05/dbf2java-library-mudado.html)
+He mudado el proyecto a otro espacio. Más información aquí: [https://www.apuntesdejava.com/2015/05/dbf2java-library-mudado.html]({{ '/2015/05/dbf2java-library-mudado.html' | relative_url }})

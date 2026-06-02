@@ -6,4 +6,4 @@ permalink: /tags/webinar/
 
 # Tag: webinar
 
-- 2010-03-11 - [Webinar de ICEfaces](/2010/03/webinar-de-icefaces.html)
+- 2010-03-11 - [Webinar de ICEfaces]({{ '/2010/03/webinar-de-icefaces.html' | relative_url }})

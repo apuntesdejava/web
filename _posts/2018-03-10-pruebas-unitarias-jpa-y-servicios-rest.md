@@ -15,7 +15,7 @@ tags:
   - "java ee"
 ---
 
-[![](/assets/blogger/79-focus.png)](/assets/blogger/79-focus.png)
+[![]({{ '/assets/blogger/79-focus.png' | relative_url }})]({{ '/assets/blogger/79-focus.png' | relative_url }})
 
 Ya hemos desarrollado el servicio, con acceso a base de datos, lógica de negocio, lo hemos probado tanto a nivel de EJB de base de datos, como probando el servicio REST.
 
@@ -202,7 +202,7 @@ Aquí es donde se empaqueta todo, se prepara el uber jar con todo el .war genera
             </build>
 ```
 
-Para más detalle de este archivo de configuración, lo puedes revisar en la sección final del post [Ejemplos de Microservicios con Java](/2017/12/ejemplos-de-microservicios-con-java.html).
+Para más detalle de este archivo de configuración, lo puedes revisar en la sección final del post [Ejemplos de Microservicios con Java]({{ '/2017/12/ejemplos-de-microservicios-con-java.html' | relative_url }}).
 
 ## Creamos el archivo .jar
 
@@ -214,7 +214,7 @@ mvn clean package -P dist
 
 El comando pasará por las etapas de construcción, prueba y empaquetado.
 
-[![](/assets/blogger/2018-03-10_01-08-57.png)](/assets/blogger/2018-03-10_01-08-57.png)
+[![]({{ '/assets/blogger/2018-03-10_01-08-57.png' | relative_url }})]({{ '/assets/blogger/2018-03-10_01-08-57.png' | relative_url }})
 
 ## Ejecución del microservicio.
 
@@ -227,11 +227,11 @@ java -jar payara-arquillian-1.0.jar
 
 Y vemos que se ejecute:
 
-[![](/assets/blogger/2018-03-10_01-13-59.png)](/assets/blogger/2018-03-10_01-13-59.png)
+[![]({{ '/assets/blogger/2018-03-10_01-13-59.png' | relative_url }})]({{ '/assets/blogger/2018-03-10_01-13-59.png' | relative_url }})
 
  Incluso, podemos revisar si el servicio se ha conectado a la base de datos utilizando el pool de conexiones. Podemos revisar esto en el MySQL:
 
-[![](/assets/blogger/2018-03-10_01-17-05.png)](/assets/blogger/2018-03-10_01-17-05.png)
+[![]({{ '/assets/blogger/2018-03-10_01-17-05.png' | relative_url }})]({{ '/assets/blogger/2018-03-10_01-17-05.png' | relative_url }})
 
 ## Invocando al servicio
 
@@ -239,7 +239,7 @@ Nos aseguramos de que la base de datos tenga la información necesaria. Yo gener
 
 Pues bien, ahora invocamos el servicio (yo lo haré usando httpie) y este es el resultado.
 
-[![](/assets/blogger/2018-03-10_01-27-53.png)](/assets/blogger/2018-03-10_01-27-53.png)
+[![]({{ '/assets/blogger/2018-03-10_01-27-53.png' | relative_url }})]({{ '/assets/blogger/2018-03-10_01-27-53.png' | relative_url }})
 
 ## Código fuente
 

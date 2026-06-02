@@ -14,7 +14,7 @@ tags:
   - "glassfish v5"
 ---
 
-![](/assets/blogger/glassfish_logo.png)
+![]({{ '/assets/blogger/glassfish_logo.png' | relative_url }})
 
 A partir de hoy y en los siguientes posts comenzaremos a ver y revisar lo que **será **el [Java EE](http://www.oracle.com/technetwork/java/javaee/overview/index.html) 8.
 
@@ -52,11 +52,11 @@ Y al entrar a la consola web: http://localhost:4848
 
 Esta es la página de carga
 
-[![](/assets/blogger/glassfish-splash.png)](/assets/blogger/glassfish-splash.png)
+[![]({{ '/assets/blogger/glassfish-splash.png' | relative_url }})]({{ '/assets/blogger/glassfish-splash.png' | relative_url }})
 
 y finalmente obtendremos la consola de administración:
 
-[![](/assets/blogger/glassfish-consola.png)](/assets/blogger/glassfish-consola.png)
+[![]({{ '/assets/blogger/glassfish-consola.png' | relative_url }})]({{ '/assets/blogger/glassfish-consola.png' | relative_url }})
 
 Básicamente luce igual a la versión 4.0
 

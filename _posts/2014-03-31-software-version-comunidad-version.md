@@ -10,7 +10,7 @@ tags:
   - "opinion"
 ---
 
-[![](/assets/blogger/288px-Opensource.svg.png)](/assets/blogger/288px-Opensource.svg.png)
+[![]({{ '/assets/blogger/288px-Opensource.svg.png' | relative_url }})]({{ '/assets/blogger/288px-Opensource.svg.png' | relative_url }})
 
 Cuando tenía la intención de comprarme mi primer auto, un amigo me dijo "Si va a ser tu primer auto, cómprate uno usado. Así si lo chocas, no te va a doler pagarlo. Y cuando ya tengas experiencia, compras uno nuevo". ¿Qué tiene que ver esto con OpenSource?
 

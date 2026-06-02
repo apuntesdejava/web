@@ -17,7 +17,7 @@ tags:
   - "tips"
 ---
 
-[![](/assets/blogger/duke_log2.jpg)](/assets/blogger/duke_log2.jpg)
+[![]({{ '/assets/blogger/duke_log2.jpg' | relative_url }})]({{ '/assets/blogger/duke_log2.jpg' | relative_url }})
 
 Todas las aplicaciones en Java EE va a necesitar - al menos -  una conexión a una base de datos relacional.
 
@@ -168,7 +168,7 @@ El código fuente para este ejemplo, y que funciona para [Payara 4](http://www.p
 
 Las bases de datos que utilizo son los siguientes:
 
-- HSQL, que está tomado del [post anterior](/2017/04/payara-micro.html). Se autocrea y siguiendo unas instrucciones se puede llenar esa base de datos.
+- HSQL, que está tomado del [post anterior]({{ '/2017/04/payara-micro.html' | relative_url }}). Se autocrea y siguiendo unas instrucciones se puede llenar esa base de datos.
 
 - Apache Derby, que está tomando de la base de datos Sample que viene incluido en el JDK.
 

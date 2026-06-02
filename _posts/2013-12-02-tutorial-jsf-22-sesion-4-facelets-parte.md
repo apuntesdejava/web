@@ -18,7 +18,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Tutorial JSF 2.2 - Sesión 4: Facelets (Parte I)](/assets/blogger/jsf-logo.png)](/assets/blogger/jsf-logo.png)
+[![Tutorial JSF 2.2 - Sesión 4: Facelets (Parte I)]({{ '/assets/blogger/jsf-logo.png' | relative_url }})]({{ '/assets/blogger/jsf-logo.png' | relative_url }})
 
 Los facelets es una declaración bastante ligera de declaración de páginas web. En los JSP, el lenguaje era Java dentro de los JSP, y estos fragmentos se llamaban scriptlets. En cambio, en JSF, se llama facelets.
 
@@ -89,7 +89,7 @@ fn:toLowerCase</code></td>
 
 Los que hemos desarrollado aplicaciones web vemos que la necesidad de que todas las páginas luzcan igual (con la misma cabecera, mismo menú y mismo pie) es algo obligatorio. Y repetir constantemente la misma declaración en cada página es una mala práctica que es castigado con pena de muerte. Hacer fragmentos de las partes repetibles y llamarlas en cada página es una salida, pero no es muy práctica; ya que se tiene (igual) repetir la inclusión de esos archivos en cada página, y si falta una sola invocación, ya no es lo mismo.
 
-[![](/assets/blogger/Plantillas.png)](/assets/blogger/Plantillas.png)
+[![]({{ '/assets/blogger/Plantillas.png' | relative_url }})]({{ '/assets/blogger/Plantillas.png' | relative_url }})
 
 En el viejo Struts, incluía el framework **Tiles** que permitía crear plantillas generales, y cuando se invocaba a esa declaración, ya incorporaba las partes que se deseaban añadir.
 

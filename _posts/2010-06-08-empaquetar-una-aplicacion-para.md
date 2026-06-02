@@ -16,7 +16,7 @@ tags:
   - "trucos"
 ---
 
-[![](/assets/blogger/ant-logo.png)](/assets/blogger/ant-logo.png)
+[![]({{ '/assets/blogger/ant-logo.png' | relative_url }})]({{ '/assets/blogger/ant-logo.png' | relative_url }})
 
 Uno de los tantos motivos por lo que utilizo NetBeans en lugar de otro IDE, es que utiliza la [Apache Ant](http://ant.apache.org/) para compilar, crear .jar .war .ear, javadoc, etc.. prácticamente para todo, y solo usando un archivo .xml. Y lo mejor es que se puede personalizar el .xml a nuestro antojo.
 

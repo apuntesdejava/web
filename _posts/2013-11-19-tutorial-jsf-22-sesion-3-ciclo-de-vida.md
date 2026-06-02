@@ -17,13 +17,13 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Tutorial JSF 2.2 - Sesión 3: Ciclo de vida de una aplicación](/assets/blogger/jsf-logo.png)](/assets/blogger/jsf-logo.png)
+[![Tutorial JSF 2.2 - Sesión 3: Ciclo de vida de una aplicación]({{ '/assets/blogger/jsf-logo.png' | relative_url }})]({{ '/assets/blogger/jsf-logo.png' | relative_url }})
 
 Siguiendo con el tutorial de JSF 2.2, esta vez veremos el ciclo de vida de una aplicación. Es importante conocer esto, ya que podremos saber cómo viaja una petición desde el cliente web, es procesado por el servidor, y cómo devuelve el resultado.
 
 En la página [7.6 The Lifecycle of a JavaServer Faces Application](http://docs.oracle.com/javaee/7/tutorial/doc/jsf-intro006.htm) se puede ver el siguiente gráfico que representa el ciclo de vida de una aplicación:
 
-[![](/assets/blogger/jsfintro-lifecycle.gif)](/assets/blogger/jsfintro-lifecycle.gif)
+[![]({{ '/assets/blogger/jsfintro-lifecycle.gif' | relative_url }})]({{ '/assets/blogger/jsfintro-lifecycle.gif' | relative_url }})
 
 ... pero como no quiero dar una simple traducción de otra web, lo que haremos es ver cada fase del ciclo de vida en una aplicación.
 
@@ -212,7 +212,7 @@ public class MiPhaseListener implements PhaseListener {
 
 Y para engancharlo al ciclo de vida de la aplicación, debemos crear el archivo `faces-config.xml` en `WEB-INF`. Si no existe el archivo, lo creamos desde la opción New File > JavaServer Faces > JSF Faces Configuration:
 
-[![](/assets/blogger/lifecycle-01.png)](/assets/blogger/lifecycle-01.png)
+[![]({{ '/assets/blogger/lifecycle-01.png' | relative_url }})]({{ '/assets/blogger/lifecycle-01.png' | relative_url }})
 
 Una vez creado, registramos el listener en el .xml que acabamos de crear usando el siguiente código:
 
@@ -232,13 +232,13 @@ Ahora, ejecutaremos la aplicación, y veamos el log de cada petición que hagamo
 
 Veamos: La primera vez que ejecutamos:
 
-[![](/assets/blogger/lifecycle-02.png)](/assets/blogger/lifecycle-02.png)
+[![]({{ '/assets/blogger/lifecycle-02.png' | relative_url }})]({{ '/assets/blogger/lifecycle-02.png' | relative_url }})
 
 Solo se presentan dos fases: RESTORE_VIEW y RENDER_RESPONSE. Es decir, la primera y la última fase.
 
 Veamos qué pasa cuando colocamos valores y le damos clic en "Enviar":
 
-[![](/assets/blogger/lifecycle-03.png)](/assets/blogger/lifecycle-03.png)
+[![]({{ '/assets/blogger/lifecycle-03.png' | relative_url }})]({{ '/assets/blogger/lifecycle-03.png' | relative_url }})
 
 Al parecer ya pasa por todas las fases del ciclo de vida. Veamos si ponemos una validación. Para ello agregamos las líneas resaltadas en el `index.html` como sigue:
 
@@ -320,7 +320,7 @@ public class EmailValidator implements Validator {
 
 Y al ejecutar el proyecto, ingresemos un valor no válido para el correo electrónico. Esto es lo que nos mostrará en el log del servidor:
 
-[![](/assets/blogger/lifecycle-04.png)](/assets/blogger/lifecycle-04.png)
+[![]({{ '/assets/blogger/lifecycle-04.png' | relative_url }})]({{ '/assets/blogger/lifecycle-04.png' | relative_url }})
 
 (He limpiado el log antes de ejecutar el error. Esto es para poder más claramente el log que responde)
 

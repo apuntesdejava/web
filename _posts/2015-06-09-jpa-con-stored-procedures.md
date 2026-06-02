@@ -14,7 +14,7 @@ tags:
   - "video"
 ---
 
-[![JPA con Stored Procedures](/assets/blogger/javaee1_large.png)](/assets/blogger/javaee1_large.png)
+[![JPA con Stored Procedures]({{ '/assets/blogger/javaee1_large.png' | relative_url }})]({{ '/assets/blogger/javaee1_large.png' | relative_url }})
 
 JPA es el API que nos permite manejar la persistencia en Java de una manera transparente. No debemos preocuparnos cuál es el DBMS que está guardando los registros, simplemente lo invocamos como si fueran objetos en Java.
 

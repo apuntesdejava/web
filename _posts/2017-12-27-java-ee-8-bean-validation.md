@@ -12,7 +12,7 @@ tags:
   - "java ee 8"
 ---
 
-[![](/assets/blogger/duke-conformance.jpeg)](/assets/blogger/duke-conformance.jpeg)
+[![]({{ '/assets/blogger/duke-conformance.jpeg' | relative_url }})]({{ '/assets/blogger/duke-conformance.jpeg' | relative_url }})
 
 En Java EE 8, el api Bean Validation ha venido con mejoras.
 

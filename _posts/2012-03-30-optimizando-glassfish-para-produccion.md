@@ -17,7 +17,7 @@ tags:
   - "trucos"
 ---
 
-![](/assets/blogger/glassfish-duke.jpg)
+![]({{ '/assets/blogger/glassfish-duke.jpg' | relative_url }})
 
 Gracias a un Tweet de Edwin Ilovares (@_edwini) me hizo recordar en publicar un post que lo tenía pendiente desde hace un tiempo, y es sobre la optimización de GlassFish.
 

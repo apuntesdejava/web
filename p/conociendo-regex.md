@@ -8,6 +8,6 @@ permalink: /p/conociendo-regex.html
 canonical_url: https://www.apuntesdejava.com/p/conociendo-regex.html
 ---
 
-- [Para qué sirve, metacaracteres, búsqueda por rangos, cuantificadores](/2015/02/conociendo-regex-parte-12.html)
+- [Para qué sirve, metacaracteres, búsqueda por rangos, cuantificadores]({{ '/2015/02/conociendo-regex-parte-12.html' | relative_url }})
 
-- [Extrayendo subcadenas, Greedy Quantifiers.](/2015/12/conociendo-regex-parte-22.html)
+- [Extrayendo subcadenas, Greedy Quantifiers.]({{ '/2015/12/conociendo-regex-parte-22.html' | relative_url }})

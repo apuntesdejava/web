@@ -57,17 +57,17 @@ Para continuar con este tutorial, crearemos tres entidades (en el vídeo se mues
 
 Para comenzar, necesitamos crear un módulo con la plantilla "service-builder".
 
-[![](/assets/blogger/create.png)](/assets/blogger/create.png)
+[![]({{ '/assets/blogger/create.png' | relative_url }})]({{ '/assets/blogger/create.png' | relative_url }})
 
 Clic Next. Establecemos el paquete donde se elojarán las clases a crear. Colocamos `com.apuntesdejava.virtualclassroom`
 
-[![](/assets/blogger/2019-08-09_11-40-56.png)](/assets/blogger/2019-08-09_11-40-56.png)
+[![]({{ '/assets/blogger/2019-08-09_11-40-56.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_11-40-56.png' | relative_url }})
 
 Clic en Finish.
 
 Esto nos creará dos submódulos con el mismo nombre, pero con los subfijos "-api" y "-service".
 
-[![](/assets/blogger/2019-08-09_11-42-17.png)](/assets/blogger/2019-08-09_11-42-17.png)
+[![]({{ '/assets/blogger/2019-08-09_11-42-17.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_11-42-17.png' | relative_url }})
 
 El módulo classroom-api tendrá solo los API para acceder a los servicios. Hay interfaces, nada de implementación. Es la parte que los demás módulos podrán acceder.
 
@@ -100,25 +100,25 @@ Las entidades se definen en el archivo `service.xml` que se encuentra dentro del
 
 Para comenzar, debemos personalizar el namespace, estando en la vista de Overview, seleccionamos el nodo "Service Builder". En el campo "Namespace" colocamos el que deseemos.
 
-[![](/assets/blogger/2019-08-09_13-36-10.png)](/assets/blogger/2019-08-09_13-36-10.png)
+[![]({{ '/assets/blogger/2019-08-09_13-36-10.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-36-10.png' | relative_url }})
 
 Este nombres nos permitirá identificar a estos servicios, además será tomado como un prefijo de las tablas que se crearán en la base de datos.
 
 Luego, en el nodo "Entities" hacemos clic en el botón "Add Entity" y procedemos a crear las entidades.
 
-[![](/assets/blogger/2019-08-09_13-39-14.png)](/assets/blogger/2019-08-09_13-39-14.png)
+[![]({{ '/assets/blogger/2019-08-09_13-39-14.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-39-14.png' | relative_url }})
 
 Y crearemos nuestra primera entidad: Course. Además, aseguremos en activar los checks "Local Service" y "Remote Service"
 
-[![](/assets/blogger/2019-08-09_13-40-50.png)](/assets/blogger/2019-08-09_13-40-50.png)
+[![]({{ '/assets/blogger/2019-08-09_13-40-50.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-40-50.png' | relative_url }})
 
 No tendrá ninguna columna. Vamos a decirle al Service Builder que cree los campos predeterminados para esta entidad, haciendo clic en "Add Default Columns"
 
-[![](/assets/blogger/2019-08-09_13-42-47.png)](/assets/blogger/2019-08-09_13-42-47.png)
+[![]({{ '/assets/blogger/2019-08-09_13-42-47.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-42-47.png' | relative_url }})
 
 Esto nos creará los siguientes campos:
 
-[![](/assets/blogger/2019-08-09_13-44-23.png)](/assets/blogger/2019-08-09_13-44-23.png)
+[![]({{ '/assets/blogger/2019-08-09_13-44-23.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-44-23.png' | relative_url }})
 
 - `courseId`: Es la clave primaria. Está basado en el nombre de la entidad, seguido de id.
 
@@ -142,7 +142,7 @@ Además de estos campos, le agregaremos dos más:
 
 Solo que name permitirá tener localization. Para ello, después de crearlo, activamos el check Localized en el editor.
 
-[![](/assets/blogger/2019-08-09_13-54-55.png)](/assets/blogger/2019-08-09_13-54-55.png)
+[![]({{ '/assets/blogger/2019-08-09_13-54-55.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_13-54-55.png' | relative_url }})
 
 También crearemos la entidad CourseSession y tendrá los siguientes campos:
 
@@ -208,13 +208,13 @@ Una vez que tenemos las entidades declaradas, debemos construir las clases. Para
 
 virtual-classroom > modules > classroom > classrom-service > build > buildService
 
-[![](/assets/blogger/2019-08-09_14-02-00.png)](/assets/blogger/2019-08-09_14-02-00.png)
+[![]({{ '/assets/blogger/2019-08-09_14-02-00.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-02-00.png' | relative_url }})
 
 Doble clic, y esperemos a que termine de construir.
 
 Al terminar, presionamos Ctrl+F5 en el árbol del proyecto, y veremos que se crearon clases.
 
-[![](/assets/blogger/2019-08-09_14-04-28.png)](/assets/blogger/2019-08-09_14-04-28.png)
+[![]({{ '/assets/blogger/2019-08-09_14-04-28.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-04-28.png' | relative_url }})
 
 En clases que nos vamos a ocupar son las que están dentro del paquete `com.apuntesdejava.virtualclassroom.service.impl`, porque allí son las implementaciones de los CRUD.
 
@@ -311,29 +311,29 @@ Las clases completas se encuentran aquí:
 
 Con el liferay en ejecución desde el IDE, arrastremos los dos módulos al servidor de Liferay.
 
-[![](/assets/blogger/2019-08-09_14-36-30.png)](/assets/blogger/2019-08-09_14-36-30.png)
+[![]({{ '/assets/blogger/2019-08-09_14-36-30.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-36-30.png' | relative_url }})
 
 Y listo. En ese mismo momento se crearán las tablas según se han configurado. Para ello podemos revisar la base de datos.
 
-[![](/assets/blogger/2019-08-09_14-39-24.png)](/assets/blogger/2019-08-09_14-39-24.png)
+[![]({{ '/assets/blogger/2019-08-09_14-39-24.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-39-24.png' | relative_url }})
 
-[![](/assets/blogger/2019-08-09_14-40-10.png)](/assets/blogger/2019-08-09_14-40-10.png)
+[![]({{ '/assets/blogger/2019-08-09_14-40-10.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-40-10.png' | relative_url }})
 
 ## Probando los servicios
 
 Para poder invocar a nuestro servicio necesitamos el valor del groupId, el del site principal. Así que entraremos al panel de control, y en la sección "Settings" del Site por omisión "Liferay" obtenemos el valor. Para mi caso es 20123.
 
-[![](/assets/blogger/2019-08-09_14-49-07.png)](/assets/blogger/2019-08-09_14-49-07.png)
+[![]({{ '/assets/blogger/2019-08-09_14-49-07.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-49-07.png' | relative_url }})
 
 Ahora sí, entremos a la siguiente url: http://localhost:8080/api/jsonws Ahí se muestran todas los servicios remotos publicados.
 
 Seleccionamos el context name con nombre vc que es el namespace que hemos definido al inicio.
 
-[![](/assets/blogger/2019-08-09_14-51-32.png)](/assets/blogger/2019-08-09_14-51-32.png)
+[![]({{ '/assets/blogger/2019-08-09_14-51-32.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-51-32.png' | relative_url }})
 
 En la caja de búsqueda escribimos "add" para buscar el método "add-course":
 
-[![](/assets/blogger/2019-08-09_14-53-58.png)](/assets/blogger/2019-08-09_14-53-58.png)
+[![]({{ '/assets/blogger/2019-08-09_14-53-58.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-53-58.png' | relative_url }})
 
 Y ahí nos mostrarán los parámetros para invocación. Pero en nuestro caso no usaremos esta pantalla de prueba, sino lo haremos desde la consola de javascript que está en Liferay. Así que iremos al inicio del portal http://localhost:8080 y abrimos la consola de javascript de nuestro navegador. Allí escribiremos lo siguiente:
 
@@ -353,7 +353,7 @@ Liferay.Service(
 
 Este sería el resultado.
 
-[![](/assets/blogger/2019-08-09_14-58-37.png)](/assets/blogger/2019-08-09_14-58-37.png)
+[![]({{ '/assets/blogger/2019-08-09_14-58-37.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_14-58-37.png' | relative_url }})
 
 Podemos ver la respuesta obtenida, el valor del companyId, los valores para createDate y userId con userName, el campo "name" con el XML de la localización, etc.
 
@@ -373,7 +373,7 @@ Liferay.Service(
 
 Tendríamos el siguiente resultado:
 
-[![](/assets/blogger/2019-08-09_15-05-26.png)](/assets/blogger/2019-08-09_15-05-26.png)
+[![]({{ '/assets/blogger/2019-08-09_15-05-26.png' | relative_url }})]({{ '/assets/blogger/2019-08-09_15-05-26.png' | relative_url }})
 
 Y listo, tenemos nuestros servicios creados y que podemos consumir desde cualquier portlet de Liferay a manera de AJAX. Eso lo veremos en los siguientes posts.
 

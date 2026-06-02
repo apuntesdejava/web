@@ -8,6 +8,6 @@ permalink: /p/ajax-con-jsf-20.html
 canonical_url: https://www.apuntesdejava.com/p/ajax-con-jsf-20.html
 ---
 
-- [Ejemplo 1: Combo cambia texto](/2010/02/ajax-en-jsf-20-ejemplo-1-combo-cambia.html)
+- [Ejemplo 1: Combo cambia texto]({{ '/2010/02/ajax-en-jsf-20-ejemplo-1-combo-cambia.html' | relative_url }})
 
-- [Ejemplo 2: Tabla actualizada según se escriba](/2010/06/ajax-en-jsf-20-ejemplo-2-tabla.html)
+- [Ejemplo 2: Tabla actualizada según se escriba]({{ '/2010/06/ajax-en-jsf-20-ejemplo-2-tabla.html' | relative_url }})

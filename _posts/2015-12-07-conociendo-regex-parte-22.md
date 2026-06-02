@@ -12,7 +12,7 @@ canonical_url: https://www.apuntesdejava.com/2015/12/conociendo-regex-parte-22.h
 
 Continuamos con las Expresiones Regulares, esta vez veremos ejemplos un poco más complejo.
 
-El anterior post lo puedes ver aquí [Conociendo RegEx (Parte 1/2)](/2015/02/conociendo-regex-parte-12.html)
+El anterior post lo puedes ver aquí [Conociendo RegEx (Parte 1/2)]({{ '/2015/02/conociendo-regex-parte-12.html' | relative_url }})
 
 ## Extrayendo subcadenas
 

@@ -15,9 +15,9 @@ tags:
   - "actualizacion"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
-Este post es solo una actualización del primer apunte [RESTful... la forma más ligera de hacer WebServices (Parte 1)](/2010/11/restful-la-forma-mas-ligera-de-hacer.html) ya que esa vez se hizo con NetBeans 6.9.1.
+Este post es solo una actualización del primer apunte [RESTful... la forma más ligera de hacer WebServices (Parte 1)]({{ '/2010/11/restful-la-forma-mas-ligera-de-hacer.html' | relative_url }}) ya que esa vez se hizo con NetBeans 6.9.1.
 
 Cuando se crea una nueva clase y queremos que sea un servicio web, le agregamos antes de la declaración los tag `@Path` y `@Stateless`. En el NetBeans 7.3 nos va a sugerir cómo queremos crear el recurso asociado al webservice.
 

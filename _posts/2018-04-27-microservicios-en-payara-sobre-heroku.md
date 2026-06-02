@@ -203,7 +203,7 @@ La primera línea es para compiarlo y preparar para distribuir (con el perfil `d
 
 Y este es el resultado.
 
-[![](/assets/blogger/payara-heroku-local.png)](/assets/blogger/payara-heroku-local.png)
+[![]({{ '/assets/blogger/payara-heroku-local.png' | relative_url }})]({{ '/assets/blogger/payara-heroku-local.png' | relative_url }})
 
  ¿Lo probamos?
 

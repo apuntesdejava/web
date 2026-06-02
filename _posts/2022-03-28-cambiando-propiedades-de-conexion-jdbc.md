@@ -16,7 +16,7 @@ tags:
 
 ****
 
-**[![](/assets/blogger/f1280x720-22246_153921_5050.jpg)](/assets/blogger/f1280x720-22246_153921_5050.jpg)**
+**[![]({{ '/assets/blogger/f1280x720-22246_153921_5050.jpg' | relative_url }})]({{ '/assets/blogger/f1280x720-22246_153921_5050.jpg' | relative_url }})**
 
 **
 Normalmente**, los valores de las conexiones DEBEN estar separado del código (si eres principiante, ya debes saberlo a rajatabla). Y si usamos frameworks como Quarkus, PayaraMicro, OpenLiberty, etc (ah, también Springboot) estos ya tienen preparado características como "perfiles" donde las propiedades pueden establecerse de acuerdo a cada perfil, o también podemos usar los perfiles del Maven para usar tal o cual propiedades. O también podemos hacer que tomen los valores del entorno (variables del entorno donde se está ejecutando, sea test, staging, producción, etc). En fin, podemos configurar los valores de las propiedades **ANTES** de que se ejecute la aplicación para que funcione tranquilamente. Y así, no pasó nada.
@@ -251,7 +251,7 @@ Ejecutemos con:`mvn quarkus:dev`
 
 El resultado es:
 
-[![](/assets/blogger/QLJQzIwbNy.png)](/assets/blogger/QLJQzIwbNy.png)
+[![]({{ '/assets/blogger/QLJQzIwbNy.png' | relative_url }})]({{ '/assets/blogger/QLJQzIwbNy.png' | relative_url }})
 
 La configuración es para crear una base de datos en memoria, así que si inserto datos, cierro y vuelvo a ejecutar, no habrá datos. (esto lo veremos en el vídeo).
 
@@ -412,7 +412,7 @@ com.apuntesdejava.sample.interceptor.AppConfigSourceInterceptor
 
 Solo con esta configuración, al iniciar el Quarkus, el framework leer la configuración e inyectará los valores respectivos en el momento justo:
 
-[![](/assets/blogger/WkJmG6Ee9I.png)](/assets/blogger/WkJmG6Ee9I.png)
+[![]({{ '/assets/blogger/WkJmG6Ee9I.png' | relative_url }})]({{ '/assets/blogger/WkJmG6Ee9I.png' | relative_url }})
 
 Como se ve en el log, las credenciales se cargaron justo antes de que se mostrara el logo de inicio de carga de Quarkus.
 

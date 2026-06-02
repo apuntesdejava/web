@@ -37,19 +37,19 @@ Si se ejecuta así, el maven preguntará por el nombre el grupo, del artefacto y
 
 ### Con NetBeans
 
-[![](/assets/blogger/netbeans64_srJ03Cnr1E.png)](/assets/blogger/netbeans64_srJ03Cnr1E.png)
+[![]({{ '/assets/blogger/netbeans64_srJ03Cnr1E.png' | relative_url }})]({{ '/assets/blogger/netbeans64_srJ03Cnr1E.png' | relative_url }})
 
 #### Con IntelliJ
 
-[![](/assets/blogger/idea64_esKasRmecl.png)](/assets/blogger/idea64_esKasRmecl.png)
+[![]({{ '/assets/blogger/idea64_esKasRmecl.png' | relative_url }})]({{ '/assets/blogger/idea64_esKasRmecl.png' | relative_url }})
 
 #### Con Visual Studio Code
 
-[![](/assets/blogger/Code_Gv6ZcUBr8u.png)](/assets/blogger/Code_Gv6ZcUBr8u.png)
+[![]({{ '/assets/blogger/Code_Gv6ZcUBr8u.png' | relative_url }})]({{ '/assets/blogger/Code_Gv6ZcUBr8u.png' | relative_url }})
 
 #### Con Eclipse IDE
 
-[![](/assets/blogger/eclipse_Ol3tG84h4x.png)](/assets/blogger/eclipse_Ol3tG84h4x.png)
+[![]({{ '/assets/blogger/eclipse_Ol3tG84h4x.png' | relative_url }})]({{ '/assets/blogger/eclipse_Ol3tG84h4x.png' | relative_url }})
 
 ## Motivación
 

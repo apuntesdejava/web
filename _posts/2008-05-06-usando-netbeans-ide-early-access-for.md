@@ -14,7 +14,7 @@ tags:
 Acabo de bajar el [NetBeans IDE Early Access for PHP](http://download.netbeans.org/netbeans/6.1/final/) para ver que tal es, y a medida que voy investigando, estaré redactando este post.
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfsXnYQgwuF9mMAoMFU_Q4fNZG8c6Gf8Ll2zkBxEiVYwbuMAuE9zkFeY1C8cevKRHZIycdoS0ommetBa8VCqfDp4E0lxN5LSGPGSznW548PL9Fr-7aqjDXIvzunZiu1CxXgBLHYxuVijin/s320/nb6-php5.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfsXnYQgwuF9mMAoMFU_Q4fNZG8c6Gf8Ll2zkBxEiVYwbuMAuE9zkFeY1C8cevKRHZIycdoS0ommetBa8VCqfDp4E0lxN5LSGPGSznW548PL9Fr-7aqjDXIvzunZiu1CxXgBLHYxuVijin/s1600-h/nb6-php5.jpg)
-Previamente ya tengo instalado un sistema WAMP (Windows + Apache + MySQL + PHP) Mencioné algo de cómo se instala en el anterior post [PHP en NetBeans 6.0](/2007/12/php-en-netbeans-60.html)
+Previamente ya tengo instalado un sistema WAMP (Windows + Apache + MySQL + PHP) Mencioné algo de cómo se instala en el anterior post [PHP en NetBeans 6.0]({{ '/2007/12/php-en-netbeans-60.html' | relative_url }})
 
 La instalación es sencilla, solo pide la ubicación del Java y donde se debe instalar el IDE. Lo demás solo son mensajes de confirmación
 

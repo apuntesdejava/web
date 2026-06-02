@@ -14,7 +14,7 @@ tags:
   - "trucos"
 ---
 
-[![](/assets/blogger/heading.png)](/assets/blogger/heading.png)Este es un post corto, ya que es un tip.
+[![]({{ '/assets/blogger/heading.png' | relative_url }})]({{ '/assets/blogger/heading.png' | relative_url }})Este es un post corto, ya que es un tip.
 
 Los portlets  tienen tres estados de ventana:
 

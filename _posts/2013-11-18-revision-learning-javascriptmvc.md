@@ -13,7 +13,7 @@ tags:
   - "javascript"
 ---
 
-[![](/assets/blogger/0205OS.jpg)](/assets/blogger/0205OS.jpg)
+[![]({{ '/assets/blogger/0205OS.jpg' | relative_url }})]({{ '/assets/blogger/0205OS.jpg' | relative_url }})
 
 Acabo de leer (aunque me demoré mucho) el libro "[Learning JavaScriptMVC](http://link.packtpub.com/hFZPlQ)" de **Wojciech Bednarski
 **, y aquí tengo mi comentario.

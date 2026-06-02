@@ -13,7 +13,7 @@ tags:
   - "java ee 8"
 ---
 
-[![](/assets/blogger/FJ81A7LFJNELA37.LARGE.jpg)](/assets/blogger/FJ81A7LFJNELA37.LARGE.jpg)
+[![]({{ '/assets/blogger/FJ81A7LFJNELA37.LARGE.jpg' | relative_url }})]({{ '/assets/blogger/FJ81A7LFJNELA37.LARGE.jpg' | relative_url }})
 
 En el anterior post habíamos visto un resumen de todas las nuevas características que tendrá Java EE 8. Aquí detallaremos un poco de Servlet 4.0 que consiste básicamente en la funcionalidad Server Push.
 
@@ -27,7 +27,7 @@ Con HTTP/2 se puede hacer que: a una sola llamada al HTML, el servidor devuelva 
 
 Aquí tengo un ejemplo en ejecución. (Clic para ampliar la imagen)
 
-[![](/assets/blogger/serverpush.png)](/assets/blogger/serverpush.png)
+[![]({{ '/assets/blogger/serverpush.png' | relative_url }})]({{ '/assets/blogger/serverpush.png' | relative_url }})
 
 Es un HTML que invoca a una imagen y a un javascript. En el lado izquierdo es la manera tradicional: tres peticiones realizadas por el navegador.
 
@@ -47,7 +47,7 @@ El HTML es simple. Lo que hago en este servlet es redireccionar la petición al 
 
 Esta nueva característica ya fue hablada anteriormente. Consiste en separar en capas MVC una aplicación Web. Lo genial de esto es que no se necesitará conocer más tags o clases. Estará basado en la arquitectura JAX-RS. Esto también nos permitirá tener una misma clase endpoint de RESTful como controlador de MVC.
 
-Más detalle de esto está en el post [Java EE 8 - MVC 1.0](/2016/01/java-ee-8-mvc-10.html) Allí hay ejemplos para ver con más detalle
+Más detalle de esto está en el post [Java EE 8 - MVC 1.0]({{ '/2016/01/java-ee-8-mvc-10.html' | relative_url }}) Allí hay ejemplos para ver con más detalle
 
 ## Código fuente
 

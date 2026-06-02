@@ -16,7 +16,7 @@ tags:
 
 Una de las nuevas características de Java EE 8 es el api de JSON-B, o Json Binding, que consiste en mapear cada entrada de un dato json a un objeto java.
 
-[![](/assets/blogger/jsonb-logo.png)](/assets/blogger/jsonb-logo.png)
+[![]({{ '/assets/blogger/jsonb-logo.png' | relative_url }})]({{ '/assets/blogger/jsonb-logo.png' | relative_url }})
 
 Aquí unos ejemplos:
 

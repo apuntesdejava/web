@@ -17,7 +17,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![JSF Componentes compuestos](/assets/blogger/puzzle-3d.jpg)](/assets/blogger/puzzle-3d.jpg)
+[![JSF Componentes compuestos]({{ '/assets/blogger/puzzle-3d.jpg' | relative_url }})]({{ '/assets/blogger/puzzle-3d.jpg' | relative_url }})
 
 "Componentes compuestos", raro nombre, no? Es que no encontré otra traducción para "[Composite Components](http://docs.oracle.com/javaee/7/tutorial/doc/jsf-facelets005.htm#GIQZR)"
 
@@ -29,13 +29,13 @@ Comenzaremos por crear nuestro componente desde el NetBeans. Después de haber c
 
 Clic en "Next". El IDE nos va a proponer el nombre (out) y la ubicación. Solo cambiemos el nombre de nuestro componente. Lo llamaremos "SelectProd"
 
-[![](/assets/blogger/02-name_cc.png)](/assets/blogger/02-name_cc.png)
+[![]({{ '/assets/blogger/02-name_cc.png' | relative_url }})]({{ '/assets/blogger/02-name_cc.png' | relative_url }})
 
 Clic en "Finish".
 
 Y listo, nos mostrará una plantilla del componente. Tiene dos secciones: la interfaz, y la implementación.
 
-[![](/assets/blogger/03-code_generated.png)](/assets/blogger/03-code_generated.png)
+[![]({{ '/assets/blogger/03-code_generated.png' | relative_url }})]({{ '/assets/blogger/03-code_generated.png' | relative_url }})
 
 En la interfaz se describen cuáles son las propiedades que serán de interfaz entre el formulario y nuestro componente. Como necesitamos dos propiedades para nuestro selector, lo declaramos allí:
 
@@ -263,9 +263,9 @@ En las líneas 20,21 y 31 se están usando los métodos creados en nuestra clase
 
 La línea 25 muestra el ajax que hace recargar el contenido del segundo combo. Para más ejemplos de AJAX con JSF, pueden revisar estos posts:
 
-- [Ajax en JSF 2.0 - Ejemplo 1: Combo cambia texto](/2010/02/ajax-en-jsf-20-ejemplo-1-combo-cambia.html)
+- [Ajax en JSF 2.0 - Ejemplo 1: Combo cambia texto]({{ '/2010/02/ajax-en-jsf-20-ejemplo-1-combo-cambia.html' | relative_url }})
 
-- [Ajax en JSF 2.0 - Ejemplo 2: Tabla actualizada según se escriba](/2010/06/ajax-en-jsf-20-ejemplo-2-tabla.html)
+- [Ajax en JSF 2.0 - Ejemplo 2: Tabla actualizada según se escriba]({{ '/2010/06/ajax-en-jsf-20-ejemplo-2-tabla.html' | relative_url }})
 
 #### ... y un botón al componente
 

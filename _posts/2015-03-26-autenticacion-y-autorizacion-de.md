@@ -15,7 +15,7 @@ tags:
   - "video"
 ---
 
-[![Autenticación y Autorización de aplicaciones Java Web](/assets/blogger/Swrd.gif)](/assets/blogger/Swrd.gif)
+[![Autenticación y Autorización de aplicaciones Java Web]({{ '/assets/blogger/Swrd.gif' | relative_url }})]({{ '/assets/blogger/Swrd.gif' | relative_url }})
 
 **Autenticación** es el proceso de asegurar que un usuario es quien dice ser. Comúnmente se le da la seguridad usando un id de usuario y su respectiva contraseña.
 

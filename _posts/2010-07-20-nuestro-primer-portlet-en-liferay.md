@@ -17,7 +17,7 @@ tags:
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtW0KC2fxfz8nJE3tZBsnsUvVL2MdeqtTJE-0cIwSRRwWVYHSfyaJDbyhLC0IxYv41Bsobl2lZ3UFwa0ge-RLa-cE2lbrrrt7uei-saBoZsLF-Zl7RThiXqcCd33n4MkKqXeHrIL-D-FVN/s1600/liferay-logo.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtW0KC2fxfz8nJE3tZBsnsUvVL2MdeqtTJE-0cIwSRRwWVYHSfyaJDbyhLC0IxYv41Bsobl2lZ3UFwa0ge-RLa-cE2lbrrrt7uei-saBoZsLF-Zl7RThiXqcCd33n4MkKqXeHrIL-D-FVN/s1600/liferay-logo.png)
 
-Hasta el momento hemos visto cómo [configurar Liferay sobre un Servidor Glassfish v3 para producción](/2010/07/instalacion-de-liferay-en-un-servidor.html). Esto nos permite tener un Portal en blanco listo para que nosotros le configuremos todo. Es decir, el Liferay que viene preconfigurado con el GF, Tomcat o Jetty que está disponible en la [página de descarga de liferay.com](http://www.liferay.com/es/downloads/liferay-portal/overview), tiene contenido preparado, textos de ejemplo, temas, aplicaciones completas, etc. Además que viene configurado con HSQLDB. Si al preconfigurado le cambiamos el acceso a la base de datos para que utilice el MySQL o cualquiera, en ese momento todo el contenido del Portal estará en blanco.
+Hasta el momento hemos visto cómo [configurar Liferay sobre un Servidor Glassfish v3 para producción]({{ '/2010/07/instalacion-de-liferay-en-un-servidor.html' | relative_url }}). Esto nos permite tener un Portal en blanco listo para que nosotros le configuremos todo. Es decir, el Liferay que viene preconfigurado con el GF, Tomcat o Jetty que está disponible en la [página de descarga de liferay.com](http://www.liferay.com/es/downloads/liferay-portal/overview), tiene contenido preparado, textos de ejemplo, temas, aplicaciones completas, etc. Además que viene configurado con HSQLDB. Si al preconfigurado le cambiamos el acceso a la base de datos para que utilice el MySQL o cualquiera, en ese momento todo el contenido del Portal estará en blanco.
 
 Recomiendo la versión preconfigurada de liferay para conocer un poco cómo funciona, y además, para usarlo como caja de arena para probar nuestros portlets.
 
@@ -30,7 +30,7 @@ Comencemos con la preparación de nuestro NetBeans para desarrollar un portlet:
 
 ### Configurando NetBeans con un Servidor Liferay+Glassfish v3
 
-Previamente ya debe estar instalado los [plugins del PortalPack, que lo vimos en un post anterior](/2010/07/instalando-portal-pack-en-netbeans-69.html).
+Previamente ya debe estar instalado los [plugins del PortalPack, que lo vimos en un post anterior]({{ '/2010/07/instalando-portal-pack-en-netbeans-69.html' | relative_url }}).
 
 - **Abrimos nuestro NetBeans **y vayamos al panel de Prestaciones (Services) con Ctrl+5. Abrimos el nodo "Servidores" y hacemos clic derecho sobre ese nodo, seleccionando la opción "Agregar Servidor".
 

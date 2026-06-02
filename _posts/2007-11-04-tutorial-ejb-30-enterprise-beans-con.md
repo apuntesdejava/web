@@ -104,8 +104,8 @@ Cerrar el archivo persistence.xml.
 
 En este ejercicio crearemos la clase entidad NewsEntity. Para conocer más sobre lo que es una clase entidad, revisar las siguientes entradas:
 
-- [Usando el API de persistencia en aplicaciones de escritorio (Introducción)](/2007/06/usando-el-api-de-persistencia-en.html)
-- [API de Persistencia en NetBeans 5.5](/2007/06/api-de-persistencia-en-netbeans-55.html)
+- [Usando el API de persistencia en aplicaciones de escritorio (Introducción)]({{ '/2007/06/usando-el-api-de-persistencia-en.html' | relative_url }})
+- [API de Persistencia en NetBeans 5.5]({{ '/2007/06/api-de-persistencia-en-netbeans-55.html' | relative_url }})
 Para crear la clase *NewsEntity*, haremos lo siguiente:
 
 - Clic derecho sobre el módulo EJB en la venta de proyectos, y seleccionar *New > File / Folder* para abrir el asistente de *New File*

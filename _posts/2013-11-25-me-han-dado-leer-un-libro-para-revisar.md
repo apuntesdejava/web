@@ -14,7 +14,7 @@ tags:
   - "javascript"
 ---
 
-[![](/assets/blogger/7102EN_cov.jpg)](/assets/blogger/7102EN_cov.jpg)
+[![]({{ '/assets/blogger/7102EN_cov.jpg' | relative_url }})]({{ '/assets/blogger/7102EN_cov.jpg' | relative_url }})
 
 Me han dado a leer un libro para revisar y dar mi opinión al respecto. A pesar que no es Java, me pareció interesante verlo ya que trata del HTML5 y JavaScript.
 

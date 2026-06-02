@@ -13,7 +13,7 @@ tags:
   - "commons"
 ---
 
-[![](/assets/blogger/encryption.jpg)](/assets/blogger/encryption.jpg)
+[![]({{ '/assets/blogger/encryption.jpg' | relative_url }})]({{ '/assets/blogger/encryption.jpg' | relative_url }})
 
 ¿Quién no ha querido encriptar texto o archivo? Hay diversas maneras para hacer eso, por ejemplo, utilizando un diccionario donde se reemplazara cada caracter por un código.. y para poder desencriptarlo se debería utilizar el mismo diccionario para revertir el proceso. Pero si el diccionario cae en manos de alguien que no queremos que lo sepa, entonces estamos en peligro.
 
@@ -25,7 +25,7 @@ En este post hablaremos cómo encriptar texto, sobretodo las contraseñas, utili
 
 La historia de la [criptografía](http://es.wikipedia.org/wiki/Criptograf%C3%ADa)es bastante larga e interesante, pero para nuestro día a día, solo necesitamos cómo utilizar las bibliotecas existentes en el mercado.
 
-Hace un tiempo, hice un post de ello ([MD5 en Java](/2009/03/md5-en-java.html)) que consistía en utilizar el mismo API de Java para generar MD5.Pero ahora mostraré una biblioteca muy útil proporcionada por la fundación [ASF](http://apache.org/).
+Hace un tiempo, hice un post de ello ([MD5 en Java]({{ '/2009/03/md5-en-java.html' | relative_url }})) que consistía en utilizar el mismo API de Java para generar MD5.Pero ahora mostraré una biblioteca muy útil proporcionada por la fundación [ASF](http://apache.org/).
 
 ## Commons Codec
 
@@ -33,7 +33,7 @@ Podemos descargar su biblioteca desde aquí [http://commons.apache.org/codec/dow
 
 Descomprimimos el archivo y tomamos el .jar llamado `commons-codec-1.5.jar` y lo agregamos al proyecto. En NetBeans solo le damos clic derecho en `Libraries` del Proyecto y seleccionamos el .jar.
 
-[![](/assets/blogger/biblio-jar.jpg)](/assets/blogger/biblio-jar.jpg)
+[![]({{ '/assets/blogger/biblio-jar.jpg' | relative_url }})]({{ '/assets/blogger/biblio-jar.jpg' | relative_url }})
 
 La clase [DigestUtils](http://commons.apache.org/codec/apidocs/org/apache/commons/codec/digest/DigestUtils.html) es nuestra clase principal para utilizar los diferentes algoritmos de encriptación.
 
@@ -54,7 +54,7 @@ La salida resultante es:
 
 Para comprobarlo, yo utilizo la consola de MySQL
 
-[![](/assets/blogger/md5-mysql.png)](/assets/blogger/md5-mysql.png)
+[![]({{ '/assets/blogger/md5-mysql.png' | relative_url }})]({{ '/assets/blogger/md5-mysql.png' | relative_url }})
 
 ### SHA-HEX
 
@@ -75,7 +75,7 @@ La salida resultante es:
 
 Y en MySQL:
 
-[![](/assets/blogger/sha-mysql.jpg)](/assets/blogger/sha-mysql.jpg)
+[![]({{ '/assets/blogger/sha-mysql.jpg' | relative_url }})]({{ '/assets/blogger/sha-mysql.jpg' | relative_url }})
 
 ### SHA-256 / 512
 
@@ -90,4 +90,4 @@ Como podemos ver.. a mayor bits, mayor confiabilidad.
 
 Su contraparte, en MySQL, se utiliza la función [sha2()](http://dev.mysql.com/doc/refman/5.5/en/encryption-functions.html#function_sha2). Ojo, esta función recién está disponible en la versión 5.5.5.
 
-[![](/assets/blogger/sha2-mysql.jpg)](/assets/blogger/sha2-mysql.jpg)
+[![]({{ '/assets/blogger/sha2-mysql.jpg' | relative_url }})]({{ '/assets/blogger/sha2-mysql.jpg' | relative_url }})

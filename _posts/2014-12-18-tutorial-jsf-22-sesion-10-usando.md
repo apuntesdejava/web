@@ -15,7 +15,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Tutorial JSF 2.2 - Sesión 10: Usando Converters, Listeners, y Validators](/assets/blogger/lossless-page1-320px-20110510-jsf-logo.tiff.png)](/assets/blogger/lossless-page1-320px-20110510-jsf-logo.tiff.png)
+[![Tutorial JSF 2.2 - Sesión 10: Usando Converters, Listeners, y Validators]({{ '/assets/blogger/lossless-page1-320px-20110510-jsf-logo.tiff.png' | relative_url }})]({{ '/assets/blogger/lossless-page1-320px-20110510-jsf-logo.tiff.png' | relative_url }})
 
 Siguiendo por nuestro viaje por el mundo del JSF (y ya estando cerca al fin), aprenderemos a usar los Converters, Listeners y Validators.
 

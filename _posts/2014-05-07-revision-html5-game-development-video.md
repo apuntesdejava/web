@@ -8,7 +8,7 @@ permalink: /2014/05/revision-html5-game-development-video.html
 canonical_url: https://www.apuntesdejava.com/2014/05/revision-html5-game-development-video.html
 ---
 
-[![HTML5 Game Development \[Video\]](/assets/blogger/5886EXP_Video.jpg)](http://bit.ly/1g1eUML)
+[![HTML5 Game Development \[Video\]]({{ '/assets/blogger/5886EXP_Video.jpg' | relative_url }})](http://bit.ly/1g1eUML)
 
 Esta vez me ha tocado hacer una revisión al video tutorial "[HTML5 Game Development](http://bit.ly/1g1eUML)" ([http://bit.ly/1g1eUML](http://bit.ly/1g1eUML)) elaborado por [Makzan](http://makzan.net/) ([@makzan](https://twitter.com/makzan))
 

@@ -14,7 +14,7 @@ tags:
   - "diagramas"
 ---
 
-[![](/assets/blogger/UML-Logo.jpg)](/assets/blogger/UML-Logo.jpg)
+[![]({{ '/assets/blogger/UML-Logo.jpg' | relative_url }})]({{ '/assets/blogger/UML-Logo.jpg' | relative_url }})
 
 NetBeans permite programación orientada a objetos como Java y C++. Ahora bien, siendo un IDE muy bueno, debería permitirnos manejar UML para modelar nuestros objetos ¿cierto?
 

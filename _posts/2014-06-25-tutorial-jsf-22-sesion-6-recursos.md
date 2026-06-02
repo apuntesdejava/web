@@ -18,7 +18,7 @@ tags:
   - "jsf 2.2"
 ---
 
-[![Tutorial JSF 2.2 - Sesión 6: Recursos](/assets/blogger/books1.png)](/assets/blogger/books1.png)
+[![Tutorial JSF 2.2 - Sesión 6: Recursos]({{ '/assets/blogger/books1.png' | relative_url }})]({{ '/assets/blogger/books1.png' | relative_url }})
 
 En JSF se pueden incluir recursos tales como hojas de estilos (CSS), javascript e imágenes que queramos usar en nuestra web, pero de una manera ordenada. En este post veremos cómo lo hace.
 

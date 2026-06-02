@@ -15,7 +15,7 @@ tags:
   - "jersey"
 ---
 
-[![](/assets/blogger/micro-services1-297x250.png)](/assets/blogger/micro-services1-297x250.png)
+[![]({{ '/assets/blogger/micro-services1-297x250.png' | relative_url }})]({{ '/assets/blogger/micro-services1-297x250.png' | relative_url }})
 
 Recuerdo un tiempo que  la gente (nivel usuario) pensaba que una computadora era siempre Windows + Office, hasta lo llamaban "Microsoft":
 
@@ -70,11 +70,11 @@ public class Main {
 
 Y Listo, lo ejecutamos:
 
-[![](/assets/blogger/spark-running.png)](/assets/blogger/spark-running.png)
+[![]({{ '/assets/blogger/spark-running.png' | relative_url }})]({{ '/assets/blogger/spark-running.png' | relative_url }})
 
 Por omisión, lo estará ejecutando en el puerto 4567. Ahora bien, problemos llamando a ese host, y a la ruta 18 de java, donde dice `get("/info"...`
 
-[![](/assets/blogger/spark-request.png)](/assets/blogger/spark-request.png)
+[![]({{ '/assets/blogger/spark-request.png' | relative_url }})]({{ '/assets/blogger/spark-request.png' | relative_url }})
 
 Fácil ¿cierto?
 
@@ -96,15 +96,15 @@ post("/persona", (req, res) -> {
 
 Y listo. Ahora lo probamos. Usaremos [httpie](https://httpie.org/) (que considero más simple de usar.. además que las respuestas se ven más legibles)
 
-[![](/assets/blogger/spark-post.png)](/assets/blogger/spark-post.png)
+[![]({{ '/assets/blogger/spark-post.png' | relative_url }})]({{ '/assets/blogger/spark-post.png' | relative_url }})
 
 ¿No conoces el httpie y quieres usar el cURL? Bueno, también funciona:
 
-[![](/assets/blogger/spark-curl-post.png)](/assets/blogger/spark-curl-post.png)
+[![]({{ '/assets/blogger/spark-curl-post.png' | relative_url }})]({{ '/assets/blogger/spark-curl-post.png' | relative_url }})
 
 ¿Solo conoces Postman? Bueno, tranquilo, también funciona
 
-[![](/assets/blogger/spark-postman-post.png)](/assets/blogger/spark-postman-post.png)
+[![]({{ '/assets/blogger/spark-postman-post.png' | relative_url }})]({{ '/assets/blogger/spark-postman-post.png' | relative_url }})
 
 Ahora ¿quieres jalar un registro vía parámetros en el URL? Pues bien, aquí agregamos estas líneas.
 
@@ -149,7 +149,7 @@ El código fuente completo para este ejemplo se encuentra aquí: [https://bitbuc
 
 [https://jersey.github.io/](https://jersey.github.io/)
 
-![](/assets/blogger/jersey_logo.png)
+![]({{ '/assets/blogger/jersey_logo.png' | relative_url }})
 
 Este framework es muy conocido porque también es utilizado como parte de GlassFish / Payara... pero ¿sabías que también funciona en stand-alone?
 
@@ -186,11 +186,11 @@ Ahora bien, probemos la ejecución. Usaremos los mismos parámetros, pero consid
 
 Ejecutamos el servicio desde la línea de comandos:
 
-[![](/assets/blogger/jersey-running.png)](/assets/blogger/jersey-running.png)
+[![]({{ '/assets/blogger/jersey-running.png' | relative_url }})]({{ '/assets/blogger/jersey-running.png' | relative_url }})
 
 Ahora, llamemos a los servicios:
 
-[![](/assets/blogger/jersey-request.png)](/assets/blogger/jersey-request.png)
+[![]({{ '/assets/blogger/jersey-request.png' | relative_url }})]({{ '/assets/blogger/jersey-request.png' | relative_url }})
 
 Al igual que Spark, el manejo de la persistencia queda de nuestro lado: podemos usar el framework que querramos.
 
@@ -200,7 +200,7 @@ El proyecto completo está aquí: [https://bitbucket.org/apuntesdejava/microserv
 
 [https://www.payara.fish/payara_micro](https://www.payara.fish/payara_micro)
 
-[![](/assets/blogger/Payara-Micro.jpg)](/assets/blogger/Payara-Micro.jpg)
+[![]({{ '/assets/blogger/Payara-Micro.jpg' | relative_url }})]({{ '/assets/blogger/Payara-Micro.jpg' | relative_url }})
 
 Este es mi preferido. Ahora lo explicaré porqué.
 
@@ -216,7 +216,7 @@ Y nuestro servicio sería como esto:<script src="https://bitbucket.org/apuntesde
 
 Para fines de desarrollo, lo podemos ejecutar tranquilamente en nuestro Payara local usando nuestro IDE. Y si está ya todo listo, podemos ponerlo en producción de tres maneras: usando una aplicación Java de consola, usando [payara-micro.java](https://www.payara.fish/downloads) desde la línea de comando, o empaquetándolo dentro de un solo .jar.
 
-Las dos primeras maneras ya lo publiqué en un post anterior: [Payara Micro](/2017/04/payara-micro.html). En esta vez (y como está en este proyecto ejemplo) usaremos [Uber-JAR](https://imagej.net/Uber-JAR) para generar un solo .jar de nuestra aplicación junto con Payara Micro.
+Las dos primeras maneras ya lo publiqué en un post anterior: [Payara Micro]({{ '/2017/04/payara-micro.html' | relative_url }}). En esta vez (y como está en este proyecto ejemplo) usaremos [Uber-JAR](https://imagej.net/Uber-JAR) para generar un solo .jar de nuestra aplicación junto con Payara Micro.
 
 Crearemos nuestro .war desde Maven.
 
@@ -333,7 +333,7 @@ mvn clean package -Pdist
 
 tendremos nuestro paquete:
 
-[![](/assets/blogger/payara-building.png)](/assets/blogger/payara-building.png)
+[![]({{ '/assets/blogger/payara-building.png' | relative_url }})]({{ '/assets/blogger/payara-building.png' | relative_url }})
 
 Ahora, nos toca simplemente, ejecutar el .jar desde la línea de comandos:
 
@@ -341,11 +341,11 @@ Ahora, nos toca simplemente, ejecutar el .jar desde la línea de comandos:
 java -jar target\payara-service.jar
 ```
 
-[![](/assets/blogger/payara-running.png)](/assets/blogger/payara-running.png)
+[![]({{ '/assets/blogger/payara-running.png' | relative_url }})]({{ '/assets/blogger/payara-running.png' | relative_url }})
 
 Y listo, probemos las peticiones:
 
-[![](/assets/blogger/payara-request.png)](/assets/blogger/payara-request.png)
+[![]({{ '/assets/blogger/payara-request.png' | relative_url }})]({{ '/assets/blogger/payara-request.png' | relative_url }})
 
 ## Proyecto completo
 
@@ -355,4 +355,4 @@ El proyecto completo está en Git y se puede obtener en la siguiente página:
 
 Es un proyecto base y los tres proyectos usados en este post son subproyectos.
 
-En el `pom.xml` principal le puse una configuración adicional de tal manera que cada vez que se empaquete cada proyecto se copie todas las bibliotecas adicionales (jar) a la subcarpeta `target/lib` de tal manera que se pueda distribuir la aplicación, tal como está explicado en un anterior post: [Maven: Crear app .jar ejecutable con bibliotecas dependientes](/2015/02/maven-crear-app-jar-ejecutable-con.html).
+En el `pom.xml` principal le puse una configuración adicional de tal manera que cada vez que se empaquete cada proyecto se copie todas las bibliotecas adicionales (jar) a la subcarpeta `target/lib` de tal manera que se pueda distribuir la aplicación, tal como está explicado en un anterior post: [Maven: Crear app .jar ejecutable con bibliotecas dependientes]({{ '/2015/02/maven-crear-app-jar-ejecutable-con.html' | relative_url }}).

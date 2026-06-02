@@ -14,7 +14,7 @@ tags:
   - "tutorial"
 ---
 
-El artículo que traduje "[Usando el API de persistencia en aplicaciones de escritorio (Introducción)](/2007/06/usando-el-api-de-persistencia-en.html)" ahora pasará a la práctica usando NetBeans 5.5
+El artículo que traduje "[Usando el API de persistencia en aplicaciones de escritorio (Introducción)]({{ '/2007/06/usando-el-api-de-persistencia-en.html' | relative_url }})" ahora pasará a la práctica usando NetBeans 5.5
 
 Pues comenzamos por crear un nuevo proyecto llamado Persistence.  Luego, crearemos la unidad de persistencia entrando a New | File dentro de la categoría Persistence.
 

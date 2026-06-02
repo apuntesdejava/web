@@ -14,7 +14,7 @@ tags:
   - "websockets"
 ---
 
-[![Developing RESTful Services with JAX-RS 2.0, WebSockets, and JSON](/assets/blogger/8125EN_cov.jpg)](/assets/blogger/8125EN_cov.jpg)
+[![Developing RESTful Services with JAX-RS 2.0, WebSockets, and JSON]({{ '/assets/blogger/8125EN_cov.jpg' | relative_url }})]({{ '/assets/blogger/8125EN_cov.jpg' | relative_url }})
 
 Impresionante libro sobre RESTful, JAX-RS, WebSockets y JSON. A pesar que tiene pocos capítulos (sólo cinco), hace una explicación muy detallada y con ejemplos prácticos sobre WebServices y las mejores que viene con HTML5, como por ejemplo el SSE (Server-Sent Events).
 

@@ -15,7 +15,7 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
 Todo mantenimiento de objetos debe tener siempre lo que en inglés se llama CRUD (Create - Read - Update - Delete). Hasta ahora hemos visto C y R. Faltan el U y el D. Así que en este artículo hablaremos de ello
 
@@ -47,11 +47,11 @@ Luego, en la clase `PersonasResource`, en el método `guardar` le cambiaremos la
 
 Ahora, necesitamos también una manera óptima de identificar un objeto `Persona` a través de su ID. Creame que usando el `for()` no es la manera óptima. Debemos usar los mecanismos propios de Java. Para ello, debemos reescribir el método `equals()` en la clase `Persona`. Y, como siempre, el NetBeans nos va a ayudar. Abramos esa clase y hagamos clic derecho y seleccionamos `Insert code...`
 
-[![](/assets/blogger/rest4-001.jpg)](/assets/blogger/rest4-001.jpg)
+[![]({{ '/assets/blogger/rest4-001.jpg' | relative_url }})]({{ '/assets/blogger/rest4-001.jpg' | relative_url }})
 
 y luego seleccionamos "equals() & hashCode()...". Ahora, seleccionamos el campo "idPersona" en ambos paneles. Esto es que se utilizará el campo "idPersona" para hacer la comparación (equals) y para agrupar la comparación (hashCode)
 
-[![](/assets/blogger/rest4-002.jpg)](/assets/blogger/rest4-002.jpg)
+[![]({{ '/assets/blogger/rest4-002.jpg' | relative_url }})]({{ '/assets/blogger/rest4-002.jpg' | relative_url }})
 
 Clic en "Generate".
 
@@ -73,7 +73,7 @@ Lo que haremos es acceder a un objeto de la colección pero le damos el ID como 
 <code>http://localhost:8080/PersonaRESTWeb/resources/listaPersonas/2/</code>
 ```
 
-Antes de continuar, recordemos en el artículo donde se habló cómo [manejar un solo objeto](/2010/11/restful-la-forma-mas-ligera-de-hacer_25.html) en RESTful, que el recurso mismo es el que tiene un URL para devolver el objeto.Entonces, modificaremos el recurso `PersonasResource` (el que tiene el arreglo) para que devuelva el `PersonaResource` (el que tiene un solo objeto) y devuelva el objeto seleccionado. Entonces, debemos modificar este último recurso para que la variable `Persona` que tiene no sea `static`, pero que el valor de esa variable sea recibida por un método.
+Antes de continuar, recordemos en el artículo donde se habló cómo [manejar un solo objeto]({{ '/2010/11/restful-la-forma-mas-ligera-de-hacer_25.html' | relative_url }}) en RESTful, que el recurso mismo es el que tiene un URL para devolver el objeto.Entonces, modificaremos el recurso `PersonasResource` (el que tiene el arreglo) para que devuelva el `PersonaResource` (el que tiene un solo objeto) y devuelva el objeto seleccionado. Entonces, debemos modificar este último recurso para que la variable `Persona` que tiene no sea `static`, pero que el valor de esa variable sea recibida por un método.
 
 ```java
 //...
@@ -166,27 +166,27 @@ Listo, ahore probemos colocando unos valores como:
 
 ... desde el Test de NetBeans.
 
-[![](/assets/blogger/rest4-003.png)](/assets/blogger/rest4-003.png)
+[![]({{ '/assets/blogger/rest4-003.png' | relative_url }})]({{ '/assets/blogger/rest4-003.png' | relative_url }})
 
 Ahora, del árbol izquierdo, abramos el nodo "listaPersonas" y seleccionemos el nodo "{idPersona}"
 
-[![](/assets/blogger/rest4-004.png)](/assets/blogger/rest4-004.png)
+[![]({{ '/assets/blogger/rest4-004.png' | relative_url }})]({{ '/assets/blogger/rest4-004.png' | relative_url }})
 
 Y en el campo "idPersona", escribiremos el ID de uno de los creados, por ejemplo "2", y hacemos clic en "Test"
 
-[![](/assets/blogger/rest4-005.png)](/assets/blogger/rest4-005.png)
+[![]({{ '/assets/blogger/rest4-005.png' | relative_url }})]({{ '/assets/blogger/rest4-005.png' | relative_url }})
 
 También podemos probar desde el URL de la siguiente manera. Primero toda la lista.
 
 http://localhost:8080/PersonaRESTWeb/resources/listaPersonas
 
-[![](/assets/blogger/rest4-006.png)](/assets/blogger/rest4-006.png)
+[![]({{ '/assets/blogger/rest4-006.png' | relative_url }})]({{ '/assets/blogger/rest4-006.png' | relative_url }})
 
 Y luego, el del ID=2
 
 http://localhost:8080/PersonaRESTWeb/resources/listaPersonas/2/
 
-[![](/assets/blogger/rest4-007.png)](/assets/blogger/rest4-007.png)
+[![]({{ '/assets/blogger/rest4-007.png' | relative_url }})]({{ '/assets/blogger/rest4-007.png' | relative_url }})
 
 ### Reemplazar objeto y borrar objeto de la colección
 
@@ -237,19 +237,19 @@ public void actualizar(Persona p) {
 
 Y listo. Probemos el test de NetBeans,´agregamos los mismo objetos, y probemos la actualización: Seleccionamos el idPersona:2 y le ponemos el nuevo objeto a reemplazar, utilizando el método "PUT"
 
-[![](/assets/blogger/rest4-008.png)](/assets/blogger/rest4-008.png)
+[![]({{ '/assets/blogger/rest4-008.png' | relative_url }})]({{ '/assets/blogger/rest4-008.png' | relative_url }})
 
 Y cuando consultamos el ID=2, este será el nuevo objeto:
 
-[![](/assets/blogger/rest4-009.png)](/assets/blogger/rest4-009.png)
+[![]({{ '/assets/blogger/rest4-009.png' | relative_url }})]({{ '/assets/blogger/rest4-009.png' | relative_url }})
 
 Y luego para el método "DELETE", y le indicamos el de ID=1
 
-[![](/assets/blogger/rest4-010.png)](/assets/blogger/rest4-010.png)
+[![]({{ '/assets/blogger/rest4-010.png' | relative_url }})]({{ '/assets/blogger/rest4-010.png' | relative_url }})
 
 .. y luego obtenemos el listado de objetos.
 
-[![](/assets/blogger/rest4-011.png)](/assets/blogger/rest4-011.png)
+[![]({{ '/assets/blogger/rest4-011.png' | relative_url }})]({{ '/assets/blogger/rest4-011.png' | relative_url }})
 
 ### Código fuente del proyecto
 

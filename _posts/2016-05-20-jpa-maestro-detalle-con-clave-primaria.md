@@ -16,7 +16,7 @@ tags:
 
 [![](https://docs.google.com/drawings/d/1qA82Kiyq3VnnR7z_rQjin3JTf5-2Ny2RWrMZKLNJblA/pub?w=442&h=181)](https://docs.google.com/drawings/d/1qA82Kiyq3VnnR7z_rQjin3JTf5-2Ny2RWrMZKLNJblA/pub?w=442&h=181)
 
-Hace casi 10 años (wow!) había publicado un artículo sobre las [claves compuestas en entidades de tipo Maestro / Detalle](/2007/09/persistencia-de-java-clave-primaria.html). Bueno, aquí está una super actualización. Esa vez fue hecha con JPA 1.0, ahora lo mostraré más actualizado y mejorado con con el [JPA 2.0](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html).
+Hace casi 10 años (wow!) había publicado un artículo sobre las [claves compuestas en entidades de tipo Maestro / Detalle]({{ '/2007/09/persistencia-de-java-clave-primaria.html' | relative_url }}). Bueno, aquí está una super actualización. Esa vez fue hecha con JPA 1.0, ahora lo mostraré más actualizado y mejorado con con el [JPA 2.0](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html).
 
 El ejemplo será usado del clásico: Factura / Detalle factura; donde Factura será el "maestro" y "Detalle Factura" su detalle. La tabla de Detalle deberá tener el código de la factura y un correlativo. Ambos campos serán parte de la clave primaria del detalle.
 

@@ -12,7 +12,7 @@ canonical_url: https://www.apuntesdejava.com/p/asesoria-en-java.html
 
 ¿No sabes cómo solucionarlo y necesitas ayuda ya?
 
-[![](/assets/blogger/images.jpg)](/assets/blogger/images.jpg)
+[![]({{ '/assets/blogger/images.jpg' | relative_url }})]({{ '/assets/blogger/images.jpg' | relative_url }})
 
 ¡Aquí tenemos la solución!
 
@@ -26,7 +26,7 @@ Somos un grupo de programadores en Java que podemos ayudarte, justo en lo que ne
 
 - Capacitación en la tecnología Java.
 
-[![](/assets/blogger/Hips.png)](/assets/blogger/Hips.png)
+[![]({{ '/assets/blogger/Hips.png' | relative_url }})]({{ '/assets/blogger/Hips.png' | relative_url }})
 
 No lo pienses más. Escríbenos a [asesoria@apuntesdejava.com](mailto:asesoria@apuntesdejava.com).
 

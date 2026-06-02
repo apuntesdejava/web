@@ -16,7 +16,7 @@ tags:
   - "tutorial java"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
 Quienes hayan usado SOAP para WebService, sabrán que es bien fácil de diseñar, pero algo complicado de consumir: se necesita toda una API para construir los clientes utilizando el WSDL. Por ejemplo, para PHP se necesita de la biblioteca NuSOAP. Entonces, para lograr el concepto de "lenguaje único XML" es un dolor de cabeza. Y más aún si el cliente es tan simple como JavaScript, manejar XML de SOAP provocaría suicidos masivos... o no usar WebServices.
 
@@ -87,7 +87,7 @@ Luego, seguido al `@Stateless` agregamos la anotación `@Path("/factorial")` Est
 
 Utilizaremos el dado por defecto (`/resources`). Clic en Ok.
 
-**Nota de actualización:** Para NetBeans 7.3, la opción de crear el recurso REST cambia. Mirar aquí [RESTful con NetBeans 7.3](/2013/04/restful-con-netbeans-73.html)
+**Nota de actualización:** Para NetBeans 7.3, la opción de crear el recurso REST cambia. Mirar aquí [RESTful con NetBeans 7.3]({{ '/2013/04/restful-con-netbeans-73.html' | relative_url }})
 
 ***Nota: En GlassFish v2 (Java EE 5) solo existirán dos opciones***
 

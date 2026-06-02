@@ -18,7 +18,7 @@ tags:
 
 Retomando los tutoriales, ahora vengo con lo de la instalación de Liferay 6 en GlassFish v3.
 
-La verdad, es casi lo mismo que está explicado en el anterior post "[Instalación de Liferay en un servidor GF v3 para producción](/2010/07/instalacion-de-liferay-en-un-servidor.html)", con la excepción de que se debe considerar algunos cambios:
+La verdad, es casi lo mismo que está explicado en el anterior post "[Instalación de Liferay en un servidor GF v3 para producción]({{ '/2010/07/instalacion-de-liferay-en-un-servidor.html' | relative_url }})", con la excepción de que se debe considerar algunos cambios:
 
 Los archivos se deben descargar de aquí (al momento que se escribió este post, la versión disponible es la 6.0.5): [https://sourceforge.net/projects/lportal/files/Liferay Portal/6.0.5/](https://sourceforge.net/projects/lportal/files/Liferay%20Portal/6.0.5/)
 

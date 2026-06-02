@@ -8,7 +8,7 @@ permalink: /2013/11/resumen-conferencia-buenas-practicas-en.html
 canonical_url: https://www.apuntesdejava.com/2013/11/resumen-conferencia-buenas-practicas-en.html
 ---
 
-[![](/assets/blogger/arquillian-icon-s.png)](/assets/blogger/arquillian-icon-s.png)
+[![]({{ '/assets/blogger/arquillian-icon-s.png' | relative_url }})]({{ '/assets/blogger/arquillian-icon-s.png' | relative_url }})
 
 El día de ayer (06/11/2013) se realizó en el "Hotel Sonesta El Olivar" de San Isidro (Lima - Perú) una charla sobre las [buenas prácticas en desarrollo de aplicaciones JavaEE](http://comunicaciones.cibertec.edu.pe/dat/buenas-practicas-en-desarrollo-de-software/move-on-to-real-testing-on-JEE/informes/?utm_source=195_descubre-la&utm_medium=email&utm_campaign=mailerball) a cargo del **Ing Carlos Echevarría**. El tema principal fue la implementación de pruebas reales de una aplicación en lugar de hacer pruebas unitarias autónomas y evitando el uso de MockObjetos 'inanimados'.
 

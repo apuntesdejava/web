@@ -6,5 +6,5 @@ permalink: /archive/2023/
 
 # Archivo 2023
 
-- 2023-07-06 - [Las redes sociales](/2023/07/las-redes-sociales.html)
-- 2023-04-01 - [Conociendo las Expresionas Lambdas: desde lo simple hasta lo avanzado.](/2023/04/conociendo-las-expresionas-lambdas.html)
+- 2023-07-06 - [Las redes sociales]({{ '/2023/07/las-redes-sociales.html' | relative_url }})
+- 2023-04-01 - [Conociendo las Expresionas Lambdas: desde lo simple hasta lo avanzado.]({{ '/2023/04/conociendo-las-expresionas-lambdas.html' | relative_url }})

@@ -17,7 +17,7 @@ tags:
   - "tutorial"
 ---
 
-![Java Web MVC - Sesión 01](/assets/blogger/javaee1_large.png)
+![Java Web MVC - Sesión 01]({{ '/assets/blogger/javaee1_large.png' | relative_url }})
 
 Con este tutorial comienzo una nueva serie en este humilde blog.
 

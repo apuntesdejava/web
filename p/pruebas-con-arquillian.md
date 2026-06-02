@@ -11,10 +11,10 @@ description: "Este es el listado de todas las pasos para crear pruebas Arquillia
 
 ## Pruebas Unitarias a JPA y servicios REST con Arquillian + Payara
 
-- [Parte 1 - La configuración básica](/2018/01/pruebas-unitarias-jpa-y-servicios-rest.html).
+- [Parte 1 - La configuración básica]({{ '/2018/01/pruebas-unitarias-jpa-y-servicios-rest.html' | relative_url }}).
 
-- [Parte 2 - JPA y las pruebas](/2018/01/pruebas-unitarias-jpa-y-servicios-rest_10.html).
+- [Parte 2 - JPA y las pruebas]({{ '/2018/01/pruebas-unitarias-jpa-y-servicios-rest_10.html' | relative_url }}).
 
-- [Parte 3 - Probando el servicio](/2018/02/pruebas-unitarias-jpa-y-servicios-rest.html).
+- [Parte 3 - Probando el servicio]({{ '/2018/02/pruebas-unitarias-jpa-y-servicios-rest.html' | relative_url }}).
 
-- [Parte 4 - Empaquetando el servicio para desplegar](/2018/03/pruebas-unitarias-jpa-y-servicios-rest.html).
+- [Parte 4 - Empaquetando el servicio para desplegar]({{ '/2018/03/pruebas-unitarias-jpa-y-servicios-rest.html' | relative_url }}).

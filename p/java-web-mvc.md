@@ -8,6 +8,6 @@ permalink: /p/java-web-mvc.html
 canonical_url: https://www.apuntesdejava.com/p/java-web-mvc.html
 ---
 
-- [JSP, Servlet, JPA, EJB](/2015/06/java-web-mvc-sesion-01.html)
+- [JSP, Servlet, JPA, EJB]({{ '/2015/06/java-web-mvc-sesion-01.html' | relative_url }})
 
-- [Carga de archivo (foto)](/2015/06/java-web-mvc-sesion-0101-cargando-un.html)
+- [Carga de archivo (foto)]({{ '/2015/06/java-web-mvc-sesion-0101-cargando-un.html' | relative_url }})

@@ -13,7 +13,7 @@ tags:
   - "plugins"
 ---
 
-[![](/assets/blogger/plugin.png)](/assets/blogger/plugin.png)
+[![]({{ '/assets/blogger/plugin.png' | relative_url }})]({{ '/assets/blogger/plugin.png' | relative_url }})
 
 Antes de finalizar este año - que personalmente me sucedieron varias cosas entre buenas y malas - quiero dejaros un par de enlaces de plugins para que lo anexen a su NetBeans 7.x y con ello tendrán un editor de XSLT y de otros plugins.
 
@@ -25,8 +25,8 @@ Considerar los siguientes enlaces
 
 Ambos se deben agregar en la ventana Tools > Plugins y en la ficha "Settings". Una vez agregado, se mostrarán los plugins adicionales en la ficha "Available plugins".
 
-El primer enlace contiene varios plugins interesantes, entre los que mencioné en un anterior post: [Plugins curiosos para NetBeans 6.8](/2009/10/plugins-curiosos-para-netbeans-68.html)
+El primer enlace contiene varios plugins interesantes, entre los que mencioné en un anterior post: [Plugins curiosos para NetBeans 6.8]({{ '/2009/10/plugins-curiosos-para-netbeans-68.html' | relative_url }})
 
-El segundo contiene el editor de XSLT mencionado en el post: [Un editor de XML Schema gratuito... NetBeans](/2009/06/un-editor-de-xml-schema-gratuito.html)
+El segundo contiene el editor de XSLT mencionado en el post: [Un editor de XML Schema gratuito... NetBeans]({{ '/2009/06/un-editor-de-xml-schema-gratuito.html' | relative_url }})
 
 Que el nuevo año les sea para bien :)

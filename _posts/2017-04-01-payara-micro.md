@@ -15,7 +15,7 @@ tags:
   - "java ee"
 ---
 
-[![](/assets/blogger/Payara-Micro.jpg)](/assets/blogger/Payara-Micro.jpg)
+[![]({{ '/assets/blogger/Payara-Micro.jpg' | relative_url }})]({{ '/assets/blogger/Payara-Micro.jpg' | relative_url }})
 
 Ya estamos en una época en que no necesitamos de grandes servidores de aplicaciones para hacer funcionar una pequeña aplicación. Montar todo un entorno es cada vez más simple. Por ejemplo se está usando Docker para montar un entorno especializado únicamente para un fin: o base de datos, o servidor de aplicaciones, etc. Así se ahorran costos para configurar grandes entornos.
 
@@ -31,7 +31,7 @@ java -jar payara-micro-4.1.1.171.1.jar --logo --deploy rest-demo-services-1.0.wa
 
 (El parámetro `--logo` es opcional, pero al usarlo queda bien bonito cuando arranca)
 
-[![](/assets/blogger/2017-04-01_18-40-01.png)](/assets/blogger/2017-04-01_18-40-01.png)
+[![]({{ '/assets/blogger/2017-04-01_18-40-01.png' | relative_url }})]({{ '/assets/blogger/2017-04-01_18-40-01.png' | relative_url }})
 
 Ahora, Payara también puede ser ejecutado desde un programa Java, de la siguiente manera:
 

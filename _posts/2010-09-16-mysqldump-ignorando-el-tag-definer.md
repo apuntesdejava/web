@@ -12,7 +12,7 @@ tags:
   - "trucos"
 ---
 
-[![](/assets/blogger/logo-mysql-110x57.png)](/assets/blogger/logo-mysql-110x57.png)
+[![]({{ '/assets/blogger/logo-mysql-110x57.png' | relative_url }})]({{ '/assets/blogger/logo-mysql-110x57.png' | relative_url }})
 
 Este es otro no-apunte-de-java. Se trata del MySQL.
 

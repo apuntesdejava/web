@@ -68,7 +68,7 @@ Con estos conceptos, vamos a mencionar y describir los IDE más conocidos
   Ni bien se inicia la aplicación, pregunta por un directorio que funcionará
   como Workspace, es decir, el directorio de trabajo.
 
-  [![](/assets/blogger/eclipse_VJx6wEBQGa.png)](/assets/blogger/eclipse_VJx6wEBQGa.png)
+  [![]({{ '/assets/blogger/eclipse_VJx6wEBQGa.png' | relative_url }})]({{ '/assets/blogger/eclipse_VJx6wEBQGa.png' | relative_url }})
 
   Originalmente, allí, en ese directorio, se deberían guardar todos los
   proyectos que deberían usarse para el trabajo actual. Si se necesita cambiar a
@@ -81,16 +81,16 @@ Con estos conceptos, vamos a mencionar y describir los IDE más conocidos
   consiste el mismo Eclipse IDE con plugin. Por ejemplo, para convertir el
   Eclipse en STS, vamos a Help > Eclipse Marketplace
 
-  [![](/assets/blogger/eclipse_xkoS9QYMYf.png)](/assets/blogger/eclipse_xkoS9QYMYf.png)
+  [![]({{ '/assets/blogger/eclipse_xkoS9QYMYf.png' | relative_url }})]({{ '/assets/blogger/eclipse_xkoS9QYMYf.png' | relative_url }})
 
 Escribimos "Sprint Tools 4" y lo buscamos, y le damos en "Install"
 
-  [![](/assets/blogger/eclipse_LvcBzF4lSG.png)](/assets/blogger/eclipse_LvcBzF4lSG.png)
+  [![]({{ '/assets/blogger/eclipse_LvcBzF4lSG.png' | relative_url }})]({{ '/assets/blogger/eclipse_LvcBzF4lSG.png' | relative_url }})
 
   ... confirmamos todos las ventanas que aparecen, y... (después de reiniciar)
   al hacer "Nuevo proyecto" nos aparecerá esta opción"
 
-  [![](/assets/blogger/eclipse_95LHH5QuwK.png)](/assets/blogger/eclipse_95LHH5QuwK.png)
+  [![]({{ '/assets/blogger/eclipse_95LHH5QuwK.png' | relative_url }})]({{ '/assets/blogger/eclipse_95LHH5QuwK.png' | relative_url }})
 
 Es decir, ya estará todas las funcionalidades del ecosistema de Spring para
 Eclipse.

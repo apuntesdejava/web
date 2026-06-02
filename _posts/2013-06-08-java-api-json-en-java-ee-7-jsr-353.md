@@ -19,7 +19,7 @@ tags:
   - "netbeans"
 ---
 
-[![](/assets/blogger/jsr-353.png)](/assets/blogger/jsr-353.png)
+[![]({{ '/assets/blogger/jsr-353.png' | relative_url }})]({{ '/assets/blogger/jsr-353.png' | relative_url }})
 
 El [JSON](http://json.org/json-es.html) es un formato bastante usado para el envío de datos por internet. Es más ligero que los XML, y es usado en el API de las redes sociales tales como [Twitter](https://dev.twitter.com/docs/api/1.1), [Google](https://developers.google.com/gdata/docs/directory), [Flickr](http://www.flickr.com/services/api/response.json.html), [Facebook](https://developers.facebook.com/docs/reference/api/), etc.
 
@@ -27,7 +27,7 @@ En Java, para poder procesar ([parsing](http://en.wikipedia.org/wiki/Parsing)) u
 
 ### Servidor RESTful (más simple con JavaEE 7)
 
-Nos basaremos del proyecto creado en el anterior post "[Actualizando y eliminando elementos de una colección](/2011/01/restful-4-actualizando-y-eliminando.html)", y con algunas actualizaciones y mejoras, ahora corre en GlassFish v4. Por ejemplo, podemos omitir las etiquetas @XmlRootElement en el Bean.
+Nos basaremos del proyecto creado en el anterior post "[Actualizando y eliminando elementos de una colección]({{ '/2011/01/restful-4-actualizando-y-eliminando.html' | relative_url }})", y con algunas actualizaciones y mejoras, ahora corre en GlassFish v4. Por ejemplo, podemos omitir las etiquetas @XmlRootElement en el Bean.
 
 El recurso será más reducido y más práctico.
 
@@ -35,7 +35,7 @@ El recurso será más reducido y más práctico.
 
 (Código fuente: [http://pastebin.com/69seeYEy)](http://pastebin.com/69seeYEy)
 
-Podemos probar su funcionamiento usando algún manejador de RESTful para nuestro navegador, por ejemeplo el [POSTER](http://code.google.com/p/poster-extension/) en Firefox (aquí tengo un tutorial sobre ello: [Probando RESTful con Poster](/2011/09/probando-restful-con-poster.html))  o [Posterman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) para Chrome.
+Podemos probar su funcionamiento usando algún manejador de RESTful para nuestro navegador, por ejemeplo el [POSTER](http://code.google.com/p/poster-extension/) en Firefox (aquí tengo un tutorial sobre ello: [Probando RESTful con Poster]({{ '/2011/09/probando-restful-con-poster.html' | relative_url }}))  o [Posterman](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm) para Chrome.
 
 ### Cliente con API JSON
 

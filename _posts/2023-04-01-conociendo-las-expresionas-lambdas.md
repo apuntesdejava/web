@@ -15,7 +15,7 @@ tags:
   - "listas"
 ---
 
-![](/assets/blogger/java-lambda-expression.png)
+![]({{ '/assets/blogger/java-lambda-expression.png' | relative_url }})
 
   Veamos las expresiones Lambda, desde lo simple hasta lo complejo, para saber
   cómo aplicarlo y por qué aplicarlo.

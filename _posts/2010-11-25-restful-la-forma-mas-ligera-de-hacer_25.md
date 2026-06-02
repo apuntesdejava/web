@@ -15,9 +15,9 @@ tags:
   - "java ee 6"
 ---
 
-[![](/assets/blogger/rest-ful-webservice-baner.png)](/assets/blogger/rest-ful-webservice-baner.png)
+[![]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})]({{ '/assets/blogger/rest-ful-webservice-baner.png' | relative_url }})
 
-Hemos visto en el anterior [post](/2010/11/restful-la-forma-mas-ligera-de-hacer.html)cómo hacer un servicio REST solo para producir y consumir un texto simple. Ahora bien, en la vida real no son textos simples, sino estructuras de datos algo complicadas. Pero para ir lentos pero seguros, aprenderemos cómo hacer un servicio REST pero para manejar un solo objeto.
+Hemos visto en el anterior [post]({{ '/2010/11/restful-la-forma-mas-ligera-de-hacer.html' | relative_url }})cómo hacer un servicio REST solo para producir y consumir un texto simple. Ahora bien, en la vida real no son textos simples, sino estructuras de datos algo complicadas. Pero para ir lentos pero seguros, aprenderemos cómo hacer un servicio REST pero para manejar un solo objeto.
 
 Afortunadamente para nuestros proyectos, no debemos crear ningún XML, ni tener algún "parser" que convierta nuestros objetos en formato XML o algo parecido para enviar y recibir objetos por la red. Solo necesitamos crear nuestros JavaBeans... y ponerle algunos tags.
 

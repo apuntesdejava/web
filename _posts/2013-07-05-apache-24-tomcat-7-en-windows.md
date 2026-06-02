@@ -16,7 +16,7 @@ tags:
   - "trucos"
 ---
 
-[![](/assets/blogger/httpd_tomcat.png)](/assets/blogger/httpd_tomcat.png)
+[![]({{ '/assets/blogger/httpd_tomcat.png' | relative_url }})]({{ '/assets/blogger/httpd_tomcat.png' | relative_url }})
 
 ¿Para qué usar Apache con Tomcat si Tomcat ya es un servidor web?
 
@@ -74,7 +74,7 @@ La configuración de Apache con PHP no lo veré aquí, porque no es el objetivo 
 
 ### Apache + Tomcat
 
-Aquí viene lo bueno: Hace un tiempo hice un post sobre [configurar Apache con Tomcat](/2007/04/configuracion-de-tomcat-conectando-al.html) usando el protocolo JK. Ese post es antiguo, además que encontré otra manera más nativa de usar la comunicación entre ambos servidores, y no requiere mucha configuración. Se llama el protocolo [AJP](https://httpd.apache.org/docs/2.4/mod/mod_proxy_ajp.html).
+Aquí viene lo bueno: Hace un tiempo hice un post sobre [configurar Apache con Tomcat]({{ '/2007/04/configuracion-de-tomcat-conectando-al.html' | relative_url }}) usando el protocolo JK. Ese post es antiguo, además que encontré otra manera más nativa de usar la comunicación entre ambos servidores, y no requiere mucha configuración. Se llama el protocolo [AJP](https://httpd.apache.org/docs/2.4/mod/mod_proxy_ajp.html).
 
 En Apache se debe configurar con el módulo Proxy. Viene como parte del instalador, así que no necesitamos bajar algún módulo adicional. Para ello, debemos activar el módulo de la siguiente manera en el Apache:
 

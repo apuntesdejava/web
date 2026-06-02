@@ -14,7 +14,7 @@ tags:
   - "web"
 ---
 
-[![Usando una base de datos externa con Liferay a través de Spring](/assets/blogger/liferay-spring.png)](/assets/blogger/liferay-spring.png)
+[![Usando una base de datos externa con Liferay a través de Spring]({{ '/assets/blogger/liferay-spring.png' | relative_url }})]({{ '/assets/blogger/liferay-spring.png' | relative_url }})
 
 Todos los aplicativos (portlets) de Liferay, usando a través del *Service Builder*, utilizan la misma base de datos donde se configuró el servidor. Si deseamos utilizar otra base de datos ya existente, podemos hacer una integración en nuestro portlet. En este post veremos cómo hacer esta integración, pero en esta manera no usaremos el Service Builder.
 
