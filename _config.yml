@@ -1,0 +1,5 @@
+title: "Apuntes de Java"
+lang: es
+timezone: America/Lima
+permalink: /:year/:month/:title.html
+markdown: kramdown
