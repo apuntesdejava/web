@@ -1,0 +1,43 @@
+---
+layout: page
+title: Buscar
+permalink: /search/
+description: Busca artículos en Apuntes de Java.
+---
+
+<div class="search-box">
+  <label for="search-input">Buscar por título, fecha o tema</label>
+  <input id="search-input" type="search" placeholder="Ejemplo: Jakarta EE, JSF, Docker..." autocomplete="off" autofocus>
+  <p id="search-status" aria-live="polite">Escribe al menos dos caracteres para buscar.</p>
+</div>
+
+<div id="search-results" class="search-results">
+{% for post in site.posts %}
+  <article data-search="{{ post.title | append: ' ' | append: post.tags | append: ' ' | append: post.date | strip_html | downcase | escape }}" hidden>
+    <p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 150 }}</p>
+  </article>
+{% endfor %}
+</div>
+
+<script>
+  (() => {
+    const input = document.querySelector('#search-input');
+    const status = document.querySelector('#search-status');
+    const entries = [...document.querySelectorAll('#search-results article')];
+    const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+    input.addEventListener('input', () => {
+      const term = normalize(input.value);
+      let matches = 0;
+      entries.forEach(entry => {
+        const visible = term.length >= 2 && normalize(entry.dataset.search).includes(term);
+        entry.hidden = !visible;
+        if (visible) matches++;
+      });
+      status.textContent = term.length < 2
+        ? 'Escribe al menos dos caracteres para buscar.'
+        : `${matches} ${matches === 1 ? 'resultado' : 'resultados'}.`;
+    });
+  })();
+</script>
