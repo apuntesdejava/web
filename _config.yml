@@ -1,7 +1,19 @@
 title: "Apuntes de Java"
+description: "Tutoriales, experiencias y notas sobre Java, Jakarta EE y desarrollo de software."
 url: "https://apuntesdejava.com"
 baseurl: ""
 lang: es
 timezone: America/Lima
 permalink: /:year/:month/:title.html
 markdown: kramdown
+theme: minima
+
+author:
+  name: "Diego Silva"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

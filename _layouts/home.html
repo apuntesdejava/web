@@ -1,4 +1,71 @@
 ---
 layout: default
 ---
-{{ content }}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Java · Jakarta EE · Arquitectura</p>
+    <h1>Notas de campo para construir mejor software.</h1>
+    <p class="hero-text">Tutoriales, soluciones y experiencias prácticas acumuladas desde 2006.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#publicaciones">Ver publicaciones</a>
+      <a class="button button-secondary" href="{{ '/archive/' | relative_url }}">Explorar archivo</a>
+    </div>
+  </div>
+  <div class="hero-code" aria-hidden="true">
+    <div class="code-dots"><i></i><i></i><i></i></div>
+    <pre><span class="code-keyword">public class</span> Apuntes {
+  <span class="code-keyword">public static void</span> main() {
+    aprender();
+    compartir();
+    mejorar();
+  }
+}</pre>
+  </div>
+</section>
+
+<div class="content-grid" id="publicaciones">
+  <section class="post-feed" aria-labelledby="recent-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Lo más reciente</p>
+        <h2 id="recent-title">Últimas publicaciones</h2>
+      </div>
+      <a href="{{ '/archive/' | relative_url }}">Ver todas →</a>
+    </div>
+    <div class="post-list">
+      {% for post in site.posts limit: 12 %}
+      <article class="post-card">
+        <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>{% if post.tags.first %}{% assign tag_slug = post.tags.first | slugify %}<span>·</span><a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ post.tags.first }}</a>{% endif %}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
+        <a class="read-more" href="{{ post.url | relative_url }}" aria-label="Leer {{ post.title | escape }}">Leer artículo <span>→</span></a>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <section class="sidebar-card sidebar-about">
+      <p class="eyebrow">Sobre el blog</p>
+      <h2>Aprender haciendo</h2>
+      <p>Apuntes técnicos, tutoriales y opiniones sobre el ecosistema Java y el oficio de desarrollar software.</p>
+      <a href="{{ '/p/acerca-del-autor.html' | relative_url }}">Conoce al autor →</a>
+    </section>
+    <section class="sidebar-card">
+      <h2>Temas frecuentes</h2>
+      <div class="tag-cloud">
+        {% assign featured_tags = "java,jakarta ee,netbeans,jsf,spring,docker,arquitectura" | split: "," %}
+        {% for tag in featured_tags %}{% assign tag_slug = tag | slugify %}<a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
+      </div>
+    </section>
+    <section class="sidebar-card">
+      <h2>Guías y series</h2>
+      <ul class="plain-list">
+        <li><a href="{{ '/p/series.html' | relative_url }}">Series de artículos</a></li>
+        <li><a href="{{ '/p/tutorial-jsf-22.html' | relative_url }}">Tutorial de JSF 2.2</a></li>
+        <li><a href="{{ '/p/java-web-mvc.html' | relative_url }}">Java Web MVC</a></li>
+        <li><a href="{{ '/p/io-nio2.html' | relative_url }}">Java IO / NIO.2</a></li>
+      </ul>
+    </section>
+  </aside>
+</div>
