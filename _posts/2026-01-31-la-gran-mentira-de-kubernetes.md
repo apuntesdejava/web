@@ -15,71 +15,56 @@ description: "Cómo construir un clúster de alto rendimiento (Nomad + Fabio + Q
 
 Nos han vendido una mentira industrial.
 
-    Te han repetido hasta el cansancio que, para desplegar software moderno,
-    necesitas la complejidad de Google. Te han dicho que si no usas Kubernetes
-    (K8s), tu infraestructura es "legacy", irrelevante o amateur. Te han
-    convencido de que sacrificar 4GB de RAM solo para mantener vivo el plano de
-    control es "el costo de hacer negocios".
+Te han repetido hasta el cansancio que, para desplegar software moderno,
+necesitas la complejidad de Google. Te han dicho que si no usas Kubernetes
+(K8s), tu infraestructura es "legacy", irrelevante o amateur. Te han
+convencido de que sacrificar 4GB de RAM solo para mantener vivo el plano de
+control es "el costo de hacer negocios".
 
-    La realidad es más oscura:
-    **Kubernetes es un monstruo de sobre-ingeniería** diseñado para venderte
-    nubes costosas y horas de consultoría eterna.
+La realidad es más oscura:
+**Kubernetes es un monstruo de sobre-ingeniería** diseñado para venderte
+nubes costosas y horas de consultoría eterna.
 
-    La "Herejía" que propongo hoy es simple:
-    **No necesitas esa complejidad**. Puedes tener orquestación,
-    descubrimiento de servicios, balanceo de carga y escalado automático
-    consumiendo una fracción de los recursos y con una curva de aprendizaje
-    humana.
+La "Herejía" que propongo hoy es simple:
+**No necesitas esa complejidad**. Puedes tener orquestación,
+descubrimiento de servicios, balanceo de carga y escalado automático
+consumiendo una fracción de los recursos y con una curva de aprendizaje
+humana.
 
-    Hoy vamos a desmontar el mito. Vamos a levantar una infraestructura completa
-    usando la "Vía HashiCorp" (Nomad & Consul) sobre un entorno hostil
-    (WSL2), y vamos a probar su resistencia con fuego real (k6).
+Hoy vamos a desmontar el mito. Vamos a levantar una infraestructura completa
+usando la "Vía HashiCorp" (Nomad & Consul) sobre un entorno hostil
+(WSL2), y vamos a probar su resistencia con fuego real (k6).
 
 ### La Estrategia: "Componentes que hacen una sola cosa"
 
-    En lugar de capas infinitas de abstracción opaca, usaremos componentes que
-    siguen la filosofía UNIX: hacer una cosa y hacerla perfecta.
+En lugar de capas infinitas de abstracción opaca, usaremos componentes que
+siguen la filosofía UNIX: hacer una cosa y hacerla perfecta.
 
--
+- **El Cerebro (Nomad):**
+  Orquestación simple. Un solo binario. Sin
+  *etcd*, sin
+  nodos maestros que devoran memoria.
 
-        **El Cerebro (Nomad):**
-        Orquestación simple. Un solo binario. Sin
-        *etcd*, sin
-        nodos maestros que devoran memoria.
+- **El Mapa (Consul):** *Service Discovery*. Si un microservicio respira, Consul sabe dónde vive.
 
--
+-  **El Enrutador (Fabio):** Un balanceador de carga que se configura solo leyendo el mapa de Consul. Cero configuración manual.
 
-        **El Mapa (Consul):**
-        *Service Discovery*. Si un microservicio respira, Consul sabe dónde vive.
+-  **El Músculo (Quarkus):** Microservicios Java que arrancan en milisegundos, no en minutos.
 
--
-
-        **El Enrutador (Fabio):**
-        Un balanceador de carga que se configura solo leyendo el mapa de Consul.
-        Cero configuración manual.
-
--
-
-        **El Músculo (Quarkus):**
-        Microservicios Java que arrancan en milisegundos, no en minutos.
-
--
-
-        **El Terreno (WSL2):**
-        El campo de batalla. Un entorno Linux real, sin la pesadez de una VM
+-  **El Terreno (WSL2):** El campo de batalla. Un entorno Linux real, sin la pesadez de una VM
         tradicional.
 
 ### Fase 1: El Monolito Frágil (Lo que la mayoría hacemos)
 
-      Para entender la solución, primero debemos ver el problema. La mayoría de
-      los desarrolladores desplegamos así: Un nodo. Un puerto fijo. Una base de
-      datos.
+  Para entender la solución, primero debemos ver el problema. La mayoría de
+  los desarrolladores desplegamos así: Un nodo. Un puerto fijo. Una base de
+  datos.
 
-      Este es nuestro archivo
-      `[monolith.nomad](https://github.com/apuntesdejava/nomad-quarkus-reference-arch/blob/main/monolith.nomad)`. Es funcional, pero es un castillo de naipes. Al menos funciona para un
-      "Hola Mundo".
+  Este es nuestro archivo
+  `[monolith.nomad](https://github.com/apuntesdejava/nomad-quarkus-reference-arch/blob/main/monolith.nomad)`. Es funcional, pero es un castillo de naipes. Al menos funciona para un
+  "Hola Mundo".
 
-```java
+```hcl
 group "backend" {
     count = 1  # El punto único de fallo
     network {
@@ -88,35 +73,35 @@ group "backend" {
     # ...
 ```
 
-  Si ejecuto esto, funciona. Puedo llamar a
-  `localhost:8080` y
-  Quarkus responde. Pero, ¿qué pasa si el proceso falla? ¿Qué pasa si recibo más
-  tráfico del que un solo hilo puede manejar?
+Si ejecuto esto, funciona. Puedo llamar a
+`localhost:8080` y
+Quarkus responde. Pero, ¿qué pasa si el proceso falla? ¿Qué pasa si recibo más
+tráfico del que un solo hilo puede manejar?
 
-  Hice la prueba. Lancé un ataque con
-  **k6** y maté el proceso
-  manualmente. **Resultado:**
-  `Connection Refused`. El servicio murió instantáneamente (obviamente). Tiempo de inactividad
-  total. Pérdida de dinero.
+Hice la prueba. Lancé un ataque con
+**k6** y maté el proceso
+manualmente. **Resultado:**
+`Connection Refused`. El servicio murió instantáneamente (obviamente). Tiempo de inactividad
+total. Pérdida de dinero.
 
-  Esta es la fragilidad que te obliga a buscar "orquestadores". Y aquí es donde
-  K8s te atrapa. Pero hay otra salida.
+Esta es la fragilidad que te obliga a buscar "orquestadores". Y aquí es donde
+K8s te atrapa. Pero hay otra salida.
 
 ### Fase 2: La Evolución (El Clúster Resiliente)
 
-  Aquí es donde rompemos la Matrix. Vamos a transformar ese monolito en un
-  sistema distribuido, tolerante a fallos y auto-balanceado.
+Aquí es donde rompemos la Matrix. Vamos a transformar ese monolito en un
+sistema distribuido, tolerante a fallos y auto-balanceado.
 
-  Para lograrlo en WSL2 (que tiene una red notoriamente aislada), tuve que usar
-  una técnica poco documentada. Tuve que romper la cuarta pared.
+Para lograrlo en WSL2 (que tiene una red notoriamente aislada), tuve que usar
+una técnica poco documentada. Tuve que romper la cuarta pared.
 
-  En lugar de crear redes virtuales complejas (Overlay Networks) como hace K8s
-  con Flannel o Calico, le ordenamos a nuestros contenedores que se anuncien con
-  la IP real del host.
+En lugar de crear redes virtuales complejas (Overlay Networks) como hace K8s
+con Flannel o Calico, le ordenamos a nuestros contenedores que se anuncien con
+la IP real del host.
 
 ### El Código de la Victoria (stack.nomad):
 
-```java
+```terraform
 service {
   name = "api-quarkus"
   address_mode = "host" #   La clave de la simplicidad. Sin proxys.
@@ -128,27 +113,16 @@ service {
 }
 ```
 
-  Al desplegar esto, ocurren tres cosas simultáneamente:
+Al desplegar esto, ocurren tres cosas simultáneamente:
 
--
+- **Nomad** levanta 3 réplicas de Quarkus en puertos aleatorios.
 
-      **Nomad** levanta 3
-      réplicas de Quarkus en puertos aleatorios.
+- **Consul** detecta que están vivas (Health Check).
 
--
+- **Fabio** ve la etiqueta `urlprefix-/api` y automáticamente empieza a repartir tráfico entre las 3.
 
-      **Consul** detecta
-      que están vivas (Health Check).
-
--
-
-      **Fabio** ve la
-      etiqueta
-      `urlprefix-/api`
-      y automáticamente empieza a repartir tráfico entre las 3.
-
-  Sin reiniciar el balanceador. Sin escribir archivos de configuración de Nginx.
-  Sin YAMLs de 500 líneas.
+Sin reiniciar el balanceador. Sin escribir archivos de configuración de Nginx.
+Sin YAMLs de 500 líneas.
 
 Estado de los nodos:
 
@@ -160,27 +134,18 @@ Estado del balanceador:
 
 ### La Prueba de Fuego: Benchmark con k6
 
-  Las palabras se las lleva el viento. Los datos no. Sometí al clúster
-  evolucionado a una prueba de estrés para demostrar la diferencia.
+Las palabras se las lleva el viento. Los datos no. Sometí al clúster
+evolucionado a una prueba de estrés para demostrar la diferencia.
 
-  **Escenario de Ataque:**
+**Escenario de Ataque:**
 
--
+-  **Virtual Users:** 50 concurrentes golpeando el API sin piedad.
 
-      **Virtual Users:** 50
-      concurrentes golpeando el API sin piedad.
+-  **Duración:** 60 segundos.
 
--
+-  **Evento Caótico:** Durante la prueba, asesiné manualmente uno de los contenedores de Quarkus.
 
-      **Duración:** 60
-      segundos.
-
--
-
-      **Evento Caótico:**
-      Durante la prueba, asesiné manualmente uno de los contenedores de Quarkus.
-
-  **Los Resultados:**
+**Los Resultados:**
 
   [![](https://i.imgur.com/nDxo2xf.png)](https://i.imgur.com/nDxo2xf.png)
 
